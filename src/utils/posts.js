@@ -13,5 +13,6 @@ export const posts = Object.entries(postModules).map(([path, content]) => {
     slug,
     ...attributes,
     content: body,
+    image: attributes.image || null // Add image from front matter
   };
 }).sort((a, b) => new Date(b.date) - new Date(a.date));

@@ -12,9 +12,6 @@ export default function BlogPost() {
   return (
     <article className="markdown-content">
       <h1>{post.title}</h1>
-      <p className="post-date">
-        Published on {new Date(post.date).toLocaleDateString()}
-      </p>
       <ReactMarkdown remarkPlugins={[remarkGfm]}>
         {post.content}
       </ReactMarkdown>

@@ -1,6 +1,7 @@
+// BlogList.jsx
 import { Link } from 'react-router-dom';
 import { posts } from '../utils/posts';
-import { Card, Text, Title, Space, Stack, Divider, Image } from '@mantine/core'; // Import Image
+import { Card, Text, Title, Space, Stack, Divider, Image } from '@mantine/core';
 import '@mantine/core/styles.css';
 
 export default function BlogList() {
@@ -20,55 +21,41 @@ export default function BlogList() {
             </Text>
           </Stack>
         </Card>
-
         <Space h="xl" />
 
         <Title order={1} align="center" mb="lg">Blog Posts</Title>
         <div className="posts" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '80%', maxWidth: '800px' }}>
           {posts.map((post) => (
-            <Card
-              key={post.slug}
-              className="post-card"
-              shadow="sm"
-              p="lg"
-              radius="md"
-              withBorder
-              style={{ marginBottom: '20px', backgroundColor: 'white', width: '100%' }}
-            >
-              {/* Display Image if available */}
-              {post.image && ( // Check if image URL exists
-                <Image
-                  src={post.image} // Use post.image as the source
-                  alt={post.title} // Use post title as alt text
-                  width="100%" // Or any other width you want
-                  height="auto" // Maintain aspect ratio
-                  mb="md" // Add some margin bottom
-                  radius="md" // Optional: Round the image corners
-                />
-              )}
-
-              <Title order={3} className="post-title">
-                <Link to={`/post/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                  {post.title}
-                </Link>
-              </Title>
-              <Text className="post-date" size="sm" color="dimmed" mt="xs">
-                {new Date(post.date).toLocaleDateString()}
-              </Text>
-            </Card>
+            <Link to={`/post/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block', width: '100%' }} key={post.slug}>
+              <Card
+                shadow="sm"
+                p="lg"
+                radius="md"
+                withBorder
+                style={{ marginBottom: '20px', backgroundColor: 'white', width: '100%' }}
+              >
+                <Stack>
+                  {post.image && (
+                    <Image
+                    src={post.image}
+                    alt={post.title}
+                    width="100%"
+                    height={150}
+                    style={{ objectFit: 'contain', borderRadius: '4px 4px 0 0' }} // Use 'contain'
+                    />
+                  )}
+                  <div style={{ padding: '1rem' }}>
+                    <Title order={3} mt="xs">
+                      {post.title}
+                    </Title>
+                   {/* Removed the date */}
+                  </div>
+                </Stack>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
     </div>
   );
 }
-
-
-// posts.js (No changes needed here, but included for completeness)
-import frontMatter from 'front-matter';
-
-const postModules = import.meta.glob('../posts/*.md', {
-  query: '?raw',
-  import: 'default',
-  eager: true
-});
