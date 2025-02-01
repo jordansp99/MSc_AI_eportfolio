@@ -1,7 +1,7 @@
 ---
 title: "1. Understanding Artificial Intelligence"
 slug: "Understanding Artificial Intelligence module"
-image: "image_fx_.jpg"
+image: "/images/image1.jpg"
 ---
 
 # Learning Outcomes Summary

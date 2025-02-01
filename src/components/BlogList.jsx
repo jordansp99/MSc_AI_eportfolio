@@ -7,7 +7,7 @@ import '@mantine/core/styles.css';
 export default function BlogList() {
   return (
     <div style={{ backgroundColor: '#f0f0f0' }}>
-      <Title order={1} align="center" mb="lg">MSc E-portfolio</Title>
+      <Title order={1} align="center" mb="lg">Jordan Speight's MSc Artificial Intelligence E-portfolio</Title>
       <div className="blog-container" style={{ backgroundColor: '#f0f0f0', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         {/* About Me Section */}
         <Card className="about-card" shadow="md" p="lg" radius="md" withBorder style={{ width: '80%', maxWidth: '800px', marginTop: '20px' }}>
