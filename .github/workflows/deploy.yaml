@@ -18,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20 # Or your preferred Node.js version
+          node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
@@ -30,10 +30,10 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: dist # The name of the artifact (can be anything)
-          path: dist # The path to the folder containing the built files
+          name: dist
+          path: dist
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
         with:
-          artifact-dir: dist # This should match the artifact name above
+          artifact_name: dist  # Changed from artifact-dir to artifact_name
