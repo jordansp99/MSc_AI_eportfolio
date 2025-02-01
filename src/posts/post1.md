@@ -1,6 +1,6 @@
 ---
-title: "My First Post"
-slug: "post1"
+title: "Understanding Artificial Intelligence"
+slug: "Understanding Artificial Intelligence module"
 image: "/images/image_fx_.jpg"
 ---
 

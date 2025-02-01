@@ -23,7 +23,7 @@ export default function BlogList() {
         </Card>
         <Space h="xl" />
 
-        <Title order={1} align="center" mb="lg">Blog Posts</Title>
+        <Title order={1} align="center" mb="lg">Modules</Title>
         <div className="posts" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '80%', maxWidth: '800px' }}>
           {posts.map((post) => (
             <Link to={`/post/${post.slug}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block', width: '100%' }} key={post.slug}>
