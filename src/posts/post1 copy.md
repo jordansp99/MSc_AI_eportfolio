@@ -1,7 +1,7 @@
 ---
 title: "2. Numerical Analysis"
 slug: "Numerical Analysis"
-image: "/images/image2.jpg"
+image: "./images/image2.jpg"
 ---
 ##module learning outcomes
 
