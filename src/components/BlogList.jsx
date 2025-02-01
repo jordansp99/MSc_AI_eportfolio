@@ -9,19 +9,7 @@ export default function BlogList() {
     <div style={{ backgroundColor: '#f0f0f0' }}>
       <Title order={1} align="center" mb="lg">Jordan Speight's MSc Artificial Intelligence E-portfolio</Title>
       <div className="blog-container" style={{ backgroundColor: '#f0f0f0', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        {/* About Me Section */}
-        <Card className="about-card" shadow="md" p="lg" radius="md" withBorder style={{ width: '80%', maxWidth: '800px', marginTop: '20px' }}>
-          <Stack align="center" spacing="sm">
-            <Title order={2}>About Me</Title>
-            <Divider my="xs" />
-            <Text size="sm" color="dimmed">
-              A short and engaging description about yourself. You can add
-              your interests, background, or anything you want to share with
-              your readers. Keep it concise and inviting!
-            </Text>
-          </Stack>
-        </Card>
-        <Space h="xl" />
+
 
         <Title order={1} align="center" mb="lg">Modules</Title>
         <div className="posts" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '80%', maxWidth: '800px' }}>
