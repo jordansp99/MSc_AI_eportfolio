@@ -49,14 +49,14 @@ export default function BlogList() {
           flexDirection: 'row',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          gap: '25px',
+          gap: '30px', // Increased gap for slightly larger cards
           width: '90%',
-          maxWidth: '1400px',
+          maxWidth: '1500px', // Increased max width to accommodate larger cards
         }}>
           {posts.map((post) => (
             <Link
               to={`/post/${post.slug}`}
-              style={{ textDecoration: 'none', color: 'inherit', display: 'block', width: 'calc(350px + 25px)' }}
+              style={{ textDecoration: 'none', color: 'inherit', display: 'block', width: 'calc(370px + 30px)' }} // Adjusted Link width
               key={post.slug}
               onMouseEnter={() => setHoveredSlug(post.slug)}
               onMouseLeave={() => setHoveredSlug(null)}
@@ -69,8 +69,8 @@ export default function BlogList() {
                 style={{
                   marginBottom: '0px',
                   backgroundColor: '#ffffff', // Pure white for cards
-                  width: '350px',
-                  height: '300px',
+                  width: '370px',      // Slightly increased card width
+                  height: '320px',     // Slightly increased card height
                   transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
                   transform: hoveredSlug === post.slug ? 'scale(1.03)' : 'scale(1)',
                   cursor: 'pointer',
@@ -101,7 +101,7 @@ export default function BlogList() {
                       height="auto"
                       style={{
                         objectFit: 'cover',
-                        height: '200px',
+                        height: '220px',    // Increased image area height within card to maintain ratio
                         borderRadius: '4px 4px 0 0',
                       }}
                     />
