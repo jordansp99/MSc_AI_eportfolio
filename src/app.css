@@ -1,0 +1,42 @@
+body {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  }
+  
+  .app { /* Style the main app container */
+    padding: 20px; /* Add some padding */
+    min-height: 100vh; /* Ensure the app takes up full viewport height */
+  }
+  
+  .dark-mode {
+    background-color: #1e1e1e; /* Dark background color */
+    color: #f0f0f0; /* Light text color */
+  }
+  
+  /* Example styling for other elements in dark mode */
+  .dark-mode h1, .dark-mode h2, .dark-mode h3 {
+      color: #ffffff; /* Example heading color */
+  }
+  
+  .dark-mode a {
+      color: #61dafb; /* Example link color */
+  }
+  /* ... add more dark mode styles as needed */
+  
+  button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for button */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }

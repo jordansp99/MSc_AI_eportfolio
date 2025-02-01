@@ -7,3 +7,5 @@ slug: "post1"
 # Welcome to My Blog
 
 This is written in **Markdown**!
+
+![Beautiful landscape](https://example.com/image.jpg)
