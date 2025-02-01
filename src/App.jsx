@@ -5,7 +5,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<BlogList />} />
+        <Route path="/MSc_AI_eportfolio/" element={<BlogList />} />
         <Route path="/post/:slug" element={<BlogPost />} />
       </Routes>
     </Router>
