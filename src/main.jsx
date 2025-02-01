@@ -1,9 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client'; // Or your usual ReactDOM import
+import { MantineProvider } from '@mantine/core';
+import App from './App'; // Your main app component
+import '@mantine/core/styles.css'; // Import Mantine CSS
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>  {/* Good practice for development */}
+    <MantineProvider withGlobalStyles withNormalizeCSS> {/* Wrap with MantineProvider */}
+      <App />
+    </MantineProvider>
+  </React.StrictMode>
+);
