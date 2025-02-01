@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Deploy to GitHub Pages
 
 on:
@@ -19,7 +18,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20 # Use the latest LTS version
+          node-version: 20 # Or your preferred Node.js version
           cache: 'npm'
 
       - name: Install dependencies
@@ -28,7 +27,13 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist # The name of the artifact (can be anything)
+          path: dist # The path to the folder containing the built files
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
         with:
-          artifact-dir: dist
+          artifact-dir: dist # This should match the artifact name above
