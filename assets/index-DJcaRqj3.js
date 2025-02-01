@@ -96,7 +96,7 @@ plt.show()
 print(f"Prediction for X = 6: {y_pred[0]}")`,rL=`---
 title: "1. Understanding Artificial Intelligence"
 slug: "Understanding Artificial Intelligence module"
-image: "/images/image_fx_.jpg"
+image: "image_fx_.jpg"
 ---
 
 # Learning Outcomes Summary
