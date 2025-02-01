@@ -70,7 +70,7 @@ Error generating stack: `+y.message+`
  */function Ym(){return Ym=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var i in r)Object.prototype.hasOwnProperty.call(r,i)&&(e[i]=r[i])}return e},Ym.apply(this,arguments)}function j1(e,t){if(e==null)return{};var r={},i=Object.keys(e),o,l;for(l=0;l<i.length;l++)o=i[l],!(t.indexOf(o)>=0)&&(r[o]=e[o]);return r}function V1(e){return!!(e.metaKey||e.altKey||e.ctrlKey||e.shiftKey)}function W1(e,t){return e.button===0&&(!t||t==="_self")&&!V1(e)}const Y1=["onClick","relative","reloadDocument","replace","state","target","to","preventScrollReset","viewTransition"],K1="6";try{window.__reactRouterVersion=K1}catch{}const X1="startTransition",GE=rN[X1];function Z1(e){let{basename:t,children:r,future:i,window:o}=e,l=he.useRef();l.current==null&&(l.current=JO({window:o,v5Compat:!0}));let u=l.current,[c,p]=he.useState({action:u.action,location:u.location}),{v7_startTransition:f}=i||{},m=he.useCallback(g=>{f&&GE?GE(()=>p(g)):p(g)},[p,f]);return he.useLayoutEffect(()=>u.listen(m),[u,m]),he.useEffect(()=>q1(i),[i]),he.createElement(G1,{basename:t,children:r,location:c.location,navigationType:c.action,navigator:u,future:i})}const Q1=typeof window<"u"&&typeof window.document<"u"&&typeof window.document.createElement<"u",J1=/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,eL=he.forwardRef(function(t,r){let{onClick:i,relative:o,reloadDocument:l,replace:u,state:c,target:p,to:f,preventScrollReset:m,viewTransition:g}=t,E=j1(t,Y1),{basename:S}=he.useContext(Nr),A,v=!1;if(typeof f=="string"&&J1.test(f)&&(A=f,Q1))try{let C=new URL(window.location.href),L=f.startsWith("//")?new URL(C.protocol+f):new URL(f),M=vh(L.pathname,S);L.origin===C.origin&&M!=null?f=M+L.search+L.hash:v=!0}catch{}let k=_1(f,{relative:o}),R=tL(f,{replace:u,state:c,target:p,preventScrollReset:m,relative:o,viewTransition:g});function N(C){i&&i(C),C.defaultPrevented||R(C)}return he.createElement("a",Ym({},E,{href:A||k,onClick:v||l?i:N,ref:r,target:p}))});var HE;(function(e){e.UseScrollRestoration="useScrollRestoration",e.UseSubmit="useSubmit",e.UseSubmitFetcher="useSubmitFetcher",e.UseFetcher="useFetcher",e.useViewTransitionState="useViewTransitionState"})(HE||(HE={}));var jE;(function(e){e.UseFetcher="useFetcher",e.UseFetchers="useFetchers",e.UseScrollRestoration="useScrollRestoration"})(jE||(jE={}));function tL(e,t){let{target:r,replace:i,state:o,preventScrollReset:l,relative:u,viewTransition:c}=t===void 0?{}:t,p=R1(),f=rl(),m=FR(e,{relative:u});return he.useCallback(g=>{if(W1(g,r)){g.preventDefault();let E=i!==void 0?i:Wo(f)===Wo(m);p(e,{replace:E,state:o,preventScrollReset:l,relative:u,viewTransition:c})}},[f,p,m,i,o,r,e,l,u,c])}const nL=`---
 title: "2. Numerical Analysis"
 slug: "Numerical Analysis"
-image: "/images/image2.jpg"
+image: "./images/image2.jpg"
 ---
 ##module learning outcomes
 
@@ -96,7 +96,7 @@ plt.show()
 print(f"Prediction for X = 6: {y_pred[0]}")`,rL=`---
 title: "1. Understanding Artificial Intelligence"
 slug: "Understanding Artificial Intelligence module"
-image: "/images/image1.jpg"
+image: "./images/image1.jpg"
 ---
 
 # Learning Outcomes Summary
