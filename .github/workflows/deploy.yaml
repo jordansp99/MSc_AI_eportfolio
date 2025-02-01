@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist # The name of the artifact (can be anything)
           path: dist # The path to the folder containing the built files
