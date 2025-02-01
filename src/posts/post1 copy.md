@@ -1,7 +1,7 @@
 ---
-title: "1. Understanding Artificial Intelligence"
-slug: "Understanding Artificial Intelligence module"
-image: "/images/image_fx_.jpg"
+title: "2. Numerical Analysis"
+slug: "Numerical Analysis"
+image: "/images/image_fx_ (1).jpg"
 ---
 
 Artificial Intelligence (AI) is rapidly changing our world. This module provides a foundational understanding of AI, its subfields, benefits, challenges, and ethical implications.

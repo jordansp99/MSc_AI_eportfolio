@@ -1,0 +1,62 @@
+/* BlogPost.css */
+.markdown-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 20px auto; /* Center the content */
+    padding: 20px;
+    line-height: 1.6; /* Improve readability */
+    font-family: sans-serif; /* Use a clean font */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .markdown-content h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333; /* Darker heading color */
+  }
+  
+  .markdown-content h2,
+  .markdown-content h3,
+  .markdown-content h4,
+  .markdown-content h5,
+  .markdown-content h6 {
+    color: #444;
+  }
+  
+  .markdown-content p,
+  .markdown-content li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .markdown-content code {
+    background-color: #eee; /* Light gray background for inline code */
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace; /* Use monospace font for code */
+  }
+  
+  /* Syntax Highlighting styles (handled by react-syntax-highlighter) */
+  /* You can further customize the Dracula theme or choose another one */
+  .hljs { /* or .dracula, if that's how your theme is applied*/
+    background-color: #282a36 !important; /* Darker code block background */
+    color: #f8f8f2 !important; /* Lighter text color in code blocks */
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+    overflow: auto; /* Handle long code lines */
+  }
+  
+  .hljs-keyword, .hljs-operator, .hljs-punctuation, .hljs-function, .hljs-variable {
+    color: #c792ea !important; /* Example: Purple keywords */
+  }
+  
+  .hljs-string {
+    color: #f0c674 !important; /* Example: Orange strings */
+  }
+  
+  .hljs-comment {
+    color: #969896 !important; /* Example: Gray comments */
+  }
+   /* and so on for other syntax elements */
