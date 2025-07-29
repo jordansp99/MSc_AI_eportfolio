@@ -1,11 +1,11 @@
 import { useParams, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { posts } from '../utils/posts';
 import './BlogPost.css';
-import { useEffect } from 'react';
 
 export default function BlogPost() {
   const { slug } = useParams();
@@ -33,15 +33,36 @@ export default function BlogPost() {
           components={{
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || '');
+              const [copyText, setCopyText] = useState('Copy');
+
+              const handleCopy = () => {
+                navigator.clipboard.writeText(String(children).replace(/\n$/, ''));
+                setCopyText('Copied!');
+                setTimeout(() => {
+                  setCopyText('Copy');
+                }, 2000);
+              };
+
               return !inline && match ? (
-                <SyntaxHighlighter
-                  style={dracula}
-                  language={match[1]}
-                  PreTag="div"
-                  {...props}
-                >
-                  {String(children).replace(/\n$/, '')}
-                </SyntaxHighlighter>
+                <div className="code-block">
+                  <div className="code-header">
+                    <span>{match[1]}</span>
+                    <button onClick={handleCopy} className="copy-button">{copyText}</button>
+                  </div>
+                  <SyntaxHighlighter
+                    style={dracula}
+                    language={match[1]}
+                    PreTag="div"
+                    {...props}
+                    customStyle={{
+                      margin: 0,
+                      borderTopLeftRadius: 0,
+                      borderTopRightRadius: 0,
+                    }}
+                  >
+                    {String(children).replace(/\n$/, '')}
+                  </SyntaxHighlighter>
+                </div>
               ) : (
                 <code className={className} {...props}>
                   {children}

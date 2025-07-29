@@ -108,3 +108,39 @@
   background-color: #0056b3;
   transform: translateY(-2px); /* Slight lift on hover */
 }
+
+.code-block {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #44475a;
+  color: #f8f8f2;
+  padding: 0.5em 1em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.code-header span {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+}
+
+.copy-button {
+  background-color: #282a36;
+  color: #f8f8f2;
+  border: none;
+  padding: 0.3em 0.6em;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.8em;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #6272a4;
+}
