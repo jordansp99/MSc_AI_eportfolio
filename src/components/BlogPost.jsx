@@ -69,6 +69,9 @@ export default function BlogPost() {
                 </code>
               );
             },
+            img: ({ node, ...props }) => {
+              return <img {...props} style={{ maxWidth: '100%', height: 'auto' }} />;
+            },
           }}
         >
           {post.content}
