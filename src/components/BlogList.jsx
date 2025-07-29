@@ -34,10 +34,11 @@ export default function BlogList() {
         mb="xl" /* Increased margin-bottom */
         size="h1"
         style={{
-          color: '#263238', /* Darker, more professional title color */
-          fontSize: '3.5rem', /* Slightly smaller for better balance */
-          fontWeight: 700, /* Bolder font weight */
-          textShadow: '2px 2px 4px rgba(0,0,0,0.1)', /* Subtle text shadow */
+          color: '#263238',
+          fontSize: '3.8rem', /* Slightly larger for impact */
+          fontWeight: 700,
+          textShadow: '3px 3px 6px rgba(0,0,0,0.15)', /* More pronounced shadow */
+          letterSpacing: '-0.05em', /* Tighter letter spacing */
         }}
       >
         Jordan Speight's MSc Artificial Intelligence E-portfolio
@@ -48,14 +49,15 @@ export default function BlogList() {
         flexDirection: 'column',
         alignItems: 'center',
         width: '100%',
-        maxWidth: '1600px', /* Increased max width for wider layout */
+        maxWidth: '1600px',
         margin: '0 auto',
       }}>
 
         <Title order={2} align="center" mb="lg" style={{
-          color: '#00796B', /* Darker teal for Modules title */
-          fontSize: '2.5rem',
-          marginTop: '40px', /* Added top margin */
+          color: '#37474F', /* Consistent with card titles, a dark blue-gray */
+          fontSize: '2.2rem', /* Slightly smaller for better hierarchy */
+          marginTop: '40px',
+          fontWeight: 600, /* Slightly less bold than main title */
         }}>
           Modules
         </Title>
