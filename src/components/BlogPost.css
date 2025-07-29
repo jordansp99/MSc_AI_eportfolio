@@ -86,26 +86,16 @@
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  font-size: 0.9em;
+  font-size: 0.95em; /* Slightly larger font */
   font-weight: 500;
-  margin-bottom: 0; /* Remove bottom margin */
+  margin-bottom: 20px; /* Space below the button */
   align-self: flex-start; /* Align to the left within the flex container */
-  margin-left: calc(50% - 500px); /* Calculate margin to align with the left edge of the 1000px wide box */
-  transform: translateX(-100%); /* Move button completely to the left of its calculated margin */
-  position: relative; /* Allow z-index to work */
-  z-index: 1; /* Ensure button is above content if needed */
+  margin-left: 20px; /* Fixed margin from the left edge of the container */
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-/* Adjust for smaller screens where the calculated margin might be negative */
-@media (max-width: 1040px) { /* 1000px (max-width) + 2*20px (padding) = 1040px */
-  .back-button {
-    margin-left: 20px; /* Fixed margin from left edge */
-    transform: translateX(0); /* No horizontal transform */
-  }
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .back-button:hover {
