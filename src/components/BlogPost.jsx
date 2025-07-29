@@ -19,35 +19,37 @@ export default function BlogPost() {
   if (!post) return <div>Post not found</div>;
 
   return (
-    <article className="markdown-content">
+    <div className="blog-post-container">
       <button onClick={() => navigate(-1)} className="back-button">
         &larr; Back
       </button>
-      <h1>{post.title}</h1>
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-        components={{
-          code({ node, inline, className, children, ...props }) {
-            const match = /language-(\w+)/.exec(className || '');
-            return !inline && match ? (
-              <SyntaxHighlighter
-                style={dracula}
-                language={match[1]}
-                PreTag="div"
-                {...props}
-              >
-                {String(children).replace(/\n$/, '')}
-              </SyntaxHighlighter>
-            ) : (
-              <code className={className} {...props}>
-                {children}
-              </code>
-            );
-          },
-        }}
-      >
-        {post.content}
-      </ReactMarkdown>
-    </article>
+      <article className="markdown-content">
+        <h1>{post.title}</h1>
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            code({ node, inline, className, children, ...props }) {
+              const match = /language-(\w+)/.exec(className || '');
+              return !inline && match ? (
+                <SyntaxHighlighter
+                  style={dracula}
+                  language={match[1]}
+                  PreTag="div"
+                  {...props}
+                >
+                  {String(children).replace(/\n$/, '')}
+                </SyntaxHighlighter>
+              ) : (
+                <code className={className} {...props}>
+                  {children}
+                </code>
+              );
+            },
+          }}
+        >
+          {post.content}
+        </ReactMarkdown>
+      </article>
+    </div>
   );
 }

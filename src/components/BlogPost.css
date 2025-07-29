@@ -1,13 +1,23 @@
 /* BlogPost.css */
+.blog-post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .markdown-content {
-    max-width: 900px; /* Increased max-width for better readability */
-    margin: 40px auto; /* More vertical margin */
-    padding: 30px; /* Increased padding */
-    line-height: 1.8; /* Improved line height for readability */
-    font-family: 'Roboto', sans-serif; /* Consistent font with app.css */
-    background-color: #ffffff; /* Pure white background for content */
-    border-radius: 12px; /* More rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Stronger, softer shadow */
+    max-width: 1000px; /* Increased max-width for wider box */
+    width: 100%; /* Ensure it takes full width up to max-width */
+    margin: 20px 0; /* Adjusted margin for new container */
+    padding: 30px;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
   
   .markdown-content h1 {
@@ -72,17 +82,30 @@
 .back-button {
   background-color: #007bff;
   color: white;
-  padding: 10px 20px; /* More padding */
+  padding: 10px 20px;
   border: none;
-  border-radius: 25px; /* Pill-shaped button */
+  border-radius: 25px;
   cursor: pointer;
-  font-size: 0.9em; /* Slightly smaller font */
-  font-weight: 500; /* Medium font weight */
-  margin-bottom: 30px; /* More space below button */
-  display: inline-flex; /* Use flex for alignment */
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-bottom: 0; /* Remove bottom margin */
+  align-self: flex-start; /* Align to the left within the flex container */
+  margin-left: calc(50% - 500px); /* Calculate margin to align with the left edge of the 1000px wide box */
+  transform: translateX(-100%); /* Move button completely to the left of its calculated margin */
+  position: relative; /* Allow z-index to work */
+  z-index: 1; /* Ensure button is above content if needed */
+  display: inline-flex;
   align-items: center;
-  gap: 8px; /* Space between arrow and text */
+  gap: 8px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Adjust for smaller screens where the calculated margin might be negative */
+@media (max-width: 1040px) { /* 1000px (max-width) + 2*20px (padding) = 1040px */
+  .back-button {
+    margin-left: 20px; /* Fixed margin from left edge */
+    transform: translateX(0); /* No horizontal transform */
+  }
 }
 
 .back-button:hover {
