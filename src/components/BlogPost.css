@@ -1,11 +1,20 @@
 /* BlogPost.css */
 .blog-post-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.blog-post-layout {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.back-button-container {
+  position: sticky;
+  top: 80px;
+  height: fit-content;
 }
 
 .markdown-content {
@@ -88,9 +97,6 @@
   cursor: pointer;
   font-size: 0.95em; /* Slightly larger font */
   font-weight: 500;
-  margin-bottom: 20px; /* Space below the button */
-  align-self: flex-start; /* Align to the left within the flex container */
-  margin-left: 20px; /* Fixed margin from the left edge of the container */
   display: inline-flex;
   align-items: center;
   gap: 8px;

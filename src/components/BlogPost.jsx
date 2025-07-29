@@ -20,13 +20,16 @@ export default function BlogPost() {
 
   return (
     <div className="blog-post-container">
-      <button onClick={() => navigate(-1)} className="back-button">
-        &larr; Back
-      </button>
-      <article className="markdown-content">
-        <h1>{post.title}</h1>
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm]}
+      <div className="blog-post-layout">
+        <div className="back-button-container">
+          <button onClick={() => navigate(-1)} className="back-button">
+            &larr; Back
+          </button>
+        </div>
+        <article className="markdown-content">
+          <h1>{post.title}</h1>
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
           components={{
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || '');
@@ -49,7 +52,8 @@ export default function BlogPost() {
         >
           {post.content}
         </ReactMarkdown>
-      </article>
+        </article>
+      </div>
     </div>
   );
 }
