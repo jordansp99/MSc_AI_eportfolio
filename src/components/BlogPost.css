@@ -1,19 +1,21 @@
 /* BlogPost.css */
 .markdown-content {
-    max-width: 800px; /* Adjust as needed */
-    margin: 20px auto; /* Center the content */
-    padding: 20px;
-    line-height: 1.6; /* Improve readability */
-    font-family: sans-serif; /* Use a clean font */
-    background-color: #f9f9f9; /* Light background color */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 900px; /* Increased max-width for better readability */
+    margin: 40px auto; /* More vertical margin */
+    padding: 30px; /* Increased padding */
+    line-height: 1.8; /* Improved line height for readability */
+    font-family: 'Roboto', sans-serif; /* Consistent font with app.css */
+    background-color: #ffffff; /* Pure white background for content */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Stronger, softer shadow */
   }
   
   .markdown-content h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #333; /* Darker heading color */
+    font-size: 2.5em; /* Larger heading */
+    margin-bottom: 20px; /* More space below heading */
+    color: #263238; /* Darker, consistent heading color */
+    font-family: 'Montserrat', sans-serif; /* Consistent heading font */
+    text-align: center; /* Center align headings */
   }
   
   .markdown-content h2,
@@ -21,31 +23,37 @@
   .markdown-content h4,
   .markdown-content h5,
   .markdown-content h6 {
-    color: #444;
+    color: #37474F; /* Slightly lighter dark blue-gray */
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px; /* More space above subheadings */
+    margin-bottom: 15px;
   }
   
   .markdown-content p,
   .markdown-content li {
-    margin-bottom: 10px;
-    color: #555;
+    margin-bottom: 15px; /* More space between paragraphs/list items */
+    color: #455A64; /* Softer dark gray for body text */
   }
   
   .markdown-content code {
-    background-color: #eee; /* Light gray background for inline code */
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-family: monospace; /* Use monospace font for code */
+    background-color: #e0e0e0; /* Slightly darker light gray for inline code */
+    padding: 3px 6px; /* More padding */
+    border-radius: 5px; /* Slightly more rounded */
+    font-family: 'Fira Code', monospace; /* More aesthetic monospace font */
+    font-size: 0.95em; /* Slightly larger font size */
   }
   
   /* Syntax Highlighting styles (handled by react-syntax-highlighter) */
   /* You can further customize the Dracula theme or choose another one */
-  .hljs { /* or .dracula, if that's how your theme is applied*/
-    background-color: #282a36 !important; /* Darker code block background */
-    color: #f8f8f2 !important; /* Lighter text color in code blocks */
-    border-radius: 8px;
-    padding: 1em;
-    margin-bottom: 1em;
-    overflow: auto; /* Handle long code lines */
+  .hljs {
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+    border-radius: 10px; /* More rounded corners for code blocks */
+    padding: 1.2em; /* More padding */
+    margin-bottom: 1.5em; /* More margin below code blocks */
+    overflow: auto;
+    font-size: 0.9em; /* Slightly smaller font for code blocks */
+    line-height: 1.5;
   }
   
   .hljs-keyword, .hljs-operator, .hljs-punctuation, .hljs-function, .hljs-variable {
@@ -64,15 +72,20 @@
 .back-button {
   background-color: #007bff;
   color: white;
-  padding: 10px 15px;
+  padding: 10px 20px; /* More padding */
   border: none;
-  border-radius: 5px;
+  border-radius: 25px; /* Pill-shaped button */
   cursor: pointer;
-  font-size: 1em;
-  margin-bottom: 20px;
-  display: inline-block;
+  font-size: 0.9em; /* Slightly smaller font */
+  font-weight: 500; /* Medium font weight */
+  margin-bottom: 30px; /* More space below button */
+  display: inline-flex; /* Use flex for alignment */
+  align-items: center;
+  gap: 8px; /* Space between arrow and text */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .back-button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift on hover */
 }

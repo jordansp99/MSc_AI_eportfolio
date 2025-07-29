@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Added Roboto */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #f4f7f6; /* Light background for the whole page */
-    color: #333; /* Default text color */
+    background-color: #f4f7f6;
+    color: #333;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
@@ -24,7 +24,12 @@ body {
   
   /* Example styling for other elements in dark mode */
   .dark-mode h1, .dark-mode h2, .dark-mode h3 {
-      color: #ffffff; /* Example heading color */
+      color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Headings with Montserrat */
+    color: #263238; /* Darker color for headings */
   }
   
   .dark-mode a {
