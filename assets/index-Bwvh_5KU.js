@@ -67,77 +67,9 @@ Error generating stack: `+y.message+`
  * LICENSE.md file in the root directory of this source tree.
  *
  * @license MIT
- */function Gm(){return Gm=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var i in r)Object.prototype.hasOwnProperty.call(r,i)&&(e[i]=r[i])}return e},Gm.apply(this,arguments)}function O1(e,t){if(e==null)return{};var r={},i=Object.keys(e),o,l;for(l=0;l<i.length;l++)o=i[l],!(t.indexOf(o)>=0)&&(r[o]=e[o]);return r}function L1(e){return!!(e.metaKey||e.altKey||e.ctrlKey||e.shiftKey)}function D1(e,t){return e.button===0&&(!t||t==="_self")&&!L1(e)}const M1=["onClick","relative","reloadDocument","replace","state","target","to","preventScrollReset","viewTransition"],F1="6";try{window.__reactRouterVersion=F1}catch{}const P1="startTransition",zE=Qx[P1];function U1(e){let{basename:t,children:r,future:i,window:o}=e,l=me.useRef();l.current==null&&(l.current=$O({window:o,v5Compat:!0}));let u=l.current,[c,p]=me.useState({action:u.action,location:u.location}),{v7_startTransition:f}=i||{},m=me.useCallback(g=>{f&&zE?zE(()=>p(g)):p(g)},[p,f]);return me.useLayoutEffect(()=>u.listen(m),[u,m]),me.useEffect(()=>I1(i),[i]),me.createElement(x1,{basename:t,children:r,location:c.location,navigationType:c.action,navigator:u,future:i})}const B1=typeof window<"u"&&typeof window.document<"u"&&typeof window.document.createElement<"u",$1=/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,z1=me.forwardRef(function(t,r){let{onClick:i,relative:o,reloadDocument:l,replace:u,state:c,target:p,to:f,preventScrollReset:m,viewTransition:g}=t,E=O1(t,M1),{basename:S}=me.useContext(Cr),A,v=!1;if(typeof f=="string"&&$1.test(f)&&(A=f,B1))try{let C=new URL(window.location.href),L=f.startsWith("//")?new URL(C.protocol+f):new URL(f),M=bh(L.pathname,S);L.origin===C.origin&&M!=null?f=M+L.search+L.hash:v=!0}catch{}let k=f1(f,{relative:o}),R=q1(f,{replace:u,state:c,target:p,preventScrollReset:m,relative:o,viewTransition:g});function N(C){i&&i(C),C.defaultPrevented||R(C)}return me.createElement("a",Gm({},E,{href:A||k,onClick:v||l?i:N,ref:r,target:p}))});var qE;(function(e){e.UseScrollRestoration="useScrollRestoration",e.UseSubmit="useSubmit",e.UseSubmitFetcher="useSubmitFetcher",e.UseFetcher="useFetcher",e.useViewTransitionState="useViewTransitionState"})(qE||(qE={}));var GE;(function(e){e.UseFetcher="useFetcher",e.UseFetchers="useFetchers",e.UseScrollRestoration="useScrollRestoration"})(GE||(GE={}));function q1(e,t){let{target:r,replace:i,state:o,preventScrollReset:l,relative:u,viewTransition:c}=t===void 0?{}:t,p=g1(),f=Jo(),m=OR(e,{relative:u});return me.useCallback(g=>{if(D1(g,r)){g.preventDefault();let E=i!==void 0?i:qo(f)===qo(m);p(e,{replace:E,state:o,preventScrollReset:l,relative:u,viewTransition:c})}},[f,p,m,i,o,r,e,l,u,c])}const G1=`---
-title: "1. Understanding Artificial Intelligence"
-slug: "1. Understanding Artificial Intelligence"
-image: "./images/image1.jpg"
----
-
-# Learning Outcomes Summary
-
-## Module Artefacts
-
-## Reflective Piece: What Have I Learned and How?
-
-## Meeting Notes
-
-## Professional Skills Matrix and Action Plan
-
-\`\`\`python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-
-X = np.array([[1], [2], [3], [4], [5]])
-y = np.array([2, 4, 5, 4, 5])
-
-model = LinearRegression()
-model.fit(X, y)
-
-X_new = np.array([[6]])
-y_pred = model.predict(X_new)
-
-plt.scatter(X, y)
-plt.plot(X, model.predict(X), color='red')
-plt.scatter(X_new, y_pred, color='green')
-plt.show()
-
-print(f"Prediction for X = 6: {y_pred[0]}")`,H1=`---
-title: "2. Numerical Analysis"
-slug: "2. Numerical Analysis"
-image: "./images/image2.jpg"
----
-
-# Learning Outcomes Summary
-
-## Module Artefacts
-
-## Reflective Piece: What Have I Learned and How?
-
-## Meeting Notes
-
-## Professional Skills Matrix and Action Plan
-
-\`\`\`python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-
-X = np.array([[1], [2], [3], [4], [5]])
-y = np.array([2, 4, 5, 4, 5])
-
-model = LinearRegression()
-model.fit(X, y)
-
-X_new = np.array([[6]])
-y_pred = model.predict(X_new)
-
-plt.scatter(X, y)
-plt.plot(X, model.predict(X), color='red')
-plt.scatter(X_new, y_pred, color='green')
-plt.show()
-
-print(f"Prediction for X = 6: {y_pred[0]}")`,j1=`---
+ */function Gm(){return Gm=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var r=arguments[t];for(var i in r)Object.prototype.hasOwnProperty.call(r,i)&&(e[i]=r[i])}return e},Gm.apply(this,arguments)}function O1(e,t){if(e==null)return{};var r={},i=Object.keys(e),o,l;for(l=0;l<i.length;l++)o=i[l],!(t.indexOf(o)>=0)&&(r[o]=e[o]);return r}function L1(e){return!!(e.metaKey||e.altKey||e.ctrlKey||e.shiftKey)}function D1(e,t){return e.button===0&&(!t||t==="_self")&&!L1(e)}const M1=["onClick","relative","reloadDocument","replace","state","target","to","preventScrollReset","viewTransition"],F1="6";try{window.__reactRouterVersion=F1}catch{}const P1="startTransition",zE=Qx[P1];function U1(e){let{basename:t,children:r,future:i,window:o}=e,l=me.useRef();l.current==null&&(l.current=$O({window:o,v5Compat:!0}));let u=l.current,[c,p]=me.useState({action:u.action,location:u.location}),{v7_startTransition:f}=i||{},m=me.useCallback(g=>{f&&zE?zE(()=>p(g)):p(g)},[p,f]);return me.useLayoutEffect(()=>u.listen(m),[u,m]),me.useEffect(()=>I1(i),[i]),me.createElement(x1,{basename:t,children:r,location:c.location,navigationType:c.action,navigator:u,future:i})}const B1=typeof window<"u"&&typeof window.document<"u"&&typeof window.document.createElement<"u",$1=/^(?:[a-z][a-z0-9+.-]*:|\/\/)/i,z1=me.forwardRef(function(t,r){let{onClick:i,relative:o,reloadDocument:l,replace:u,state:c,target:p,to:f,preventScrollReset:m,viewTransition:g}=t,E=O1(t,M1),{basename:S}=me.useContext(Cr),A,v=!1;if(typeof f=="string"&&$1.test(f)&&(A=f,B1))try{let C=new URL(window.location.href),L=f.startsWith("//")?new URL(C.protocol+f):new URL(f),M=bh(L.pathname,S);L.origin===C.origin&&M!=null?f=M+L.search+L.hash:v=!0}catch{}let k=f1(f,{relative:o}),R=q1(f,{replace:u,state:c,target:p,preventScrollReset:m,relative:o,viewTransition:g});function N(C){i&&i(C),C.defaultPrevented||R(C)}return me.createElement("a",Gm({},E,{href:A||k,onClick:v||l?i:N,ref:r,target:p}))});var qE;(function(e){e.UseScrollRestoration="useScrollRestoration",e.UseSubmit="useSubmit",e.UseSubmitFetcher="useSubmitFetcher",e.UseFetcher="useFetcher",e.useViewTransitionState="useViewTransitionState"})(qE||(qE={}));var GE;(function(e){e.UseFetcher="useFetcher",e.UseFetchers="useFetchers",e.UseScrollRestoration="useScrollRestoration"})(GE||(GE={}));function q1(e,t){let{target:r,replace:i,state:o,preventScrollReset:l,relative:u,viewTransition:c}=t===void 0?{}:t,p=g1(),f=Jo(),m=OR(e,{relative:u});return me.useCallback(g=>{if(D1(g,r)){g.preventDefault();let E=i!==void 0?i:qo(f)===qo(m);p(e,{replace:E,state:o,preventScrollReset:l,relative:u,viewTransition:c})}},[f,p,m,i,o,r,e,l,u,c])}const G1=`Under development.
+`,H1=`Under development.
+`,j1=`---
 title: "3. Machine Learning"
 slug: "3. Machine Learning"
 image: "./images/image3.jpg"
@@ -173,43 +105,8 @@ plt.plot(X, model.predict(X), color='red')
 plt.scatter(X_new, y_pred, color='green')
 plt.show()
 
-print(f"Prediction for X = 6: {y_pred[0]}")`,V1=`---
-title: "4. Knowledge Representation and Reasoning"
-slug: "4. Knowledge Representation and Reasoning"
-image: "./images/image4.jpg"
----
-
-
-# Learning Outcomes Summary
-
-## Module Artefacts
-
-## Reflective Piece: What Have I Learned and How?
-
-## Meeting Notes
-
-## Professional Skills Matrix and Action Plan
-
-\`\`\`python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-
-X = np.array([[1], [2], [3], [4], [5]])
-y = np.array([2, 4, 5, 4, 5])
-
-model = LinearRegression()
-model.fit(X, y)
-
-X_new = np.array([[6]])
-y_pred = model.predict(X_new)
-
-plt.scatter(X, y)
-plt.plot(X, model.predict(X), color='red')
-plt.scatter(X_new, y_pred, color='green')
-plt.show()
-
-print(f"Prediction for X = 6: {y_pred[0]}")`,W1=`---
+print(f"Prediction for X = 6: {y_pred[0]}")`,V1=`Under development.
+`,W1=`---
 title: "5. Intelligent Agents"
 slug: "5. Intelligent Agents"
 image: "./images/image5.jpg"
@@ -245,78 +142,9 @@ plt.plot(X, model.predict(X), color='red')
 plt.scatter(X_new, y_pred, color='green')
 plt.show()
 
-print(f"Prediction for X = 6: {y_pred[0]}")`,Y1=`---
-title: "6. Research Methods and Professional Practice"
-slug: "6. Research Methods and Professional Practice"
-image: "./images/image6.jpg"
----
-
-
-# Learning Outcomes Summary
-
-## Module Artefacts
-
-## Reflective Piece: What Have I Learned and How?
-
-## Meeting Notes
-
-## Professional Skills Matrix and Action Plan
-
-\`\`\`python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-
-X = np.array([[1], [2], [3], [4], [5]])
-y = np.array([2, 4, 5, 4, 5])
-
-model = LinearRegression()
-model.fit(X, y)
-
-X_new = np.array([[6]])
-y_pred = model.predict(X_new)
-
-plt.scatter(X, y)
-plt.plot(X, model.predict(X), color='red')
-plt.scatter(X_new, y_pred, color='green')
-plt.show()
-
-print(f"Prediction for X = 6: {y_pred[0]}")`,K1=`---
-title: "7. MSc Computing Project"
-slug: "7. MSc Computing Project"
-image: "./images/image7.jpg"
----
-
-# Learning Outcomes Summary
-
-## Module Artefacts
-
-## Reflective Piece: What Have I Learned and How?
-
-## Meeting Notes
-
-## Professional Skills Matrix and Action Plan
-
-\`\`\`python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-
-X = np.array([[1], [2], [3], [4], [5]])
-y = np.array([2, 4, 5, 4, 5])
-
-model = LinearRegression()
-model.fit(X, y)
-
-X_new = np.array([[6]])
-y_pred = model.predict(X_new)
-
-plt.scatter(X, y)
-plt.plot(X, model.predict(X), color='red')
-plt.scatter(X_new, y_pred, color='green')
-plt.show()
-
-print(f"Prediction for X = 6: {y_pred[0]}")`;var No={exports:{}},it={},ra={},ir={},HE;function da(){if(HE)return ir;HE=1;function e(u){return typeof u>"u"||u===null}function t(u){return typeof u=="object"&&u!==null}function r(u){return Array.isArray(u)?u:e(u)?[]:[u]}function i(u,c){var p,f,m,g;if(c)for(g=Object.keys(c),p=0,f=g.length;p<f;p+=1)m=g[p],u[m]=c[m];return u}function o(u,c){var p="",f;for(f=0;f<c;f+=1)p+=u;return p}function l(u){return u===0&&Number.NEGATIVE_INFINITY===1/u}return ir.isNothing=e,ir.isObject=t,ir.toArray=r,ir.repeat=o,ir.isNegativeZero=l,ir.extend=i,ir}var iu,jE;function mi(){if(jE)return iu;jE=1;function e(t,r){Error.call(this),this.name="YAMLException",this.reason=t,this.mark=r,this.message=(this.reason||"(unknown reason)")+(this.mark?" "+this.mark.toString():""),Error.captureStackTrace?Error.captureStackTrace(this,this.constructor):this.stack=new Error().stack||""}return e.prototype=Object.create(Error.prototype),e.prototype.constructor=e,e.prototype.toString=function(r){var i=this.name+": ";return i+=this.reason||"(unknown reason)",!r&&this.mark&&(i+=" "+this.mark.toString()),i},iu=e,iu}var ou,VE;function X1(){if(VE)return ou;VE=1;var e=da();function t(r,i,o,l,u){this.name=r,this.buffer=i,this.position=o,this.line=l,this.column=u}return t.prototype.getSnippet=function(i,o){var l,u,c,p,f;if(!this.buffer)return null;for(i=i||4,o=o||75,l="",u=this.position;u>0&&`\0\r
+print(f"Prediction for X = 6: {y_pred[0]}")`,Y1=`Under development.
+`,K1=`Under development.
+`;var No={exports:{}},it={},ra={},ir={},HE;function da(){if(HE)return ir;HE=1;function e(u){return typeof u>"u"||u===null}function t(u){return typeof u=="object"&&u!==null}function r(u){return Array.isArray(u)?u:e(u)?[]:[u]}function i(u,c){var p,f,m,g;if(c)for(g=Object.keys(c),p=0,f=g.length;p<f;p+=1)m=g[p],u[m]=c[m];return u}function o(u,c){var p="",f;for(f=0;f<c;f+=1)p+=u;return p}function l(u){return u===0&&Number.NEGATIVE_INFINITY===1/u}return ir.isNothing=e,ir.isObject=t,ir.toArray=r,ir.repeat=o,ir.isNegativeZero=l,ir.extend=i,ir}var iu,jE;function mi(){if(jE)return iu;jE=1;function e(t,r){Error.call(this),this.name="YAMLException",this.reason=t,this.mark=r,this.message=(this.reason||"(unknown reason)")+(this.mark?" "+this.mark.toString():""),Error.captureStackTrace?Error.captureStackTrace(this,this.constructor):this.stack=new Error().stack||""}return e.prototype=Object.create(Error.prototype),e.prototype.constructor=e,e.prototype.toString=function(r){var i=this.name+": ";return i+=this.reason||"(unknown reason)",!r&&this.mark&&(i+=" "+this.mark.toString()),i},iu=e,iu}var ou,VE;function X1(){if(VE)return ou;VE=1;var e=da();function t(r,i,o,l,u){this.name=r,this.buffer=i,this.position=o,this.line=l,this.column=u}return t.prototype.getSnippet=function(i,o){var l,u,c,p,f;if(!this.buffer)return null;for(i=i||4,o=o||75,l="",u=this.position;u>0&&`\0\r
 \u2028\u2029`.indexOf(this.buffer.charAt(u-1))===-1;)if(u-=1,this.position-u>o/2-1){l=" ... ",u+=5;break}for(c="",p=this.position;p<this.buffer.length&&`\0\r
 \u2028\u2029`.indexOf(this.buffer.charAt(p))===-1;)if(p+=1,p-this.position>o/2-1){c=" ... ",p-=5;break}return f=this.buffer.slice(u,p),e.repeat(" ",i)+l+f+c+`
 `+e.repeat(" ",i+this.position-u+l.length)+"^"},t.prototype.toString=function(i){var o,l="";return this.name&&(l+='in "'+this.name+'" '),l+="at line "+(this.line+1)+", column "+(this.column+1),i||(o=this.getSnippet(),o&&(l+=`:
