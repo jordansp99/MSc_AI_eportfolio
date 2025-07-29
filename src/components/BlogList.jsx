@@ -24,60 +24,75 @@ export default function BlogList() {
 
   return (
     <div style={{
-      background: 'linear-gradient(to bottom, #eceff1, #f5f5f5)', // Soft light gray/blue gradient background
-      backgroundColor: '#f5f5f5' // Fallback
+      background: 'linear-gradient(to bottom, #e0f2f7, #ffffff)', /* Light blue to white gradient */
+      minHeight: '100vh',
+      padding: '20px 0',
     }}>
       <Title
         order={1}
         align="center"
-        mb="lg"
+        mb="xl" /* Increased margin-bottom */
         size="h1"
         style={{
-          color: '#424242', // Slightly lighter dark gray for main title
-          fontSize: '4rem',
+          color: '#263238', /* Darker, more professional title color */
+          fontSize: '3.5rem', /* Slightly smaller for better balance */
+          fontWeight: 700, /* Bolder font weight */
+          textShadow: '2px 2px 4px rgba(0,0,0,0.1)', /* Subtle text shadow */
         }}
       >
         Jordan Speight's MSc Artificial Intelligence E-portfolio
       </Title>
-      <div className="blog-container" style={{ backgroundColor: 'transparent', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <div className="blog-container" style={{
+        backgroundColor: 'transparent',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+        maxWidth: '1600px', /* Increased max width for wider layout */
+        margin: '0 auto',
+      }}>
 
-        <Title order={2} align="center" mb="lg" style={{ color: '#26A69A' }}>{/* Teal color for Modules title */}
+        <Title order={2} align="center" mb="lg" style={{
+          color: '#00796B', /* Darker teal for Modules title */
+          fontSize: '2.5rem',
+          marginTop: '40px', /* Added top margin */
+        }}>
           Modules
         </Title>
         <div className="posts" style={{
-          display: 'flex',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
+          display: 'grid', /* Use CSS Grid for better control */
+          gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', /* Responsive grid columns */
           justifyContent: 'center',
-          gap: '30px', // Increased gap for slightly larger cards
+          gap: '25px', /* Slightly reduced gap */
           width: '90%',
-          maxWidth: '1500px', // Increased max width to accommodate larger cards
+          maxWidth: '1500px',
         }}>
           {posts.map((post) => (
             <Link
               to={`/post/${post.slug}`}
-              style={{ textDecoration: 'none', color: 'inherit', display: 'block', width: 'calc(370px + 30px)' }} // Adjusted Link width
+              style={{ textDecoration: 'none', color: 'inherit', display: 'flex', justifyContent: 'center' }} /* Center link content */
               key={post.slug}
               onMouseEnter={() => setHoveredSlug(post.slug)}
               onMouseLeave={() => setHoveredSlug(null)}
             >
               <Card
-                shadow="sm"
-                p="lg"
-                radius="md"
+                shadow="md" /* Stronger shadow */
+                p="0" /* Remove padding from card directly, add to inner div */
+                radius="lg" /* More rounded corners */
                 withBorder
                 style={{
-                  marginBottom: '0px',
-                  backgroundColor: '#ffffff', // Pure white for cards
-                  width: '370px',      // Slightly increased card width
-                  height: '320px',     // Slightly increased card height
+                  backgroundColor: '#ffffff',
+                  width: '100%', /* Card takes full width of grid item */
+                  maxWidth: '350px', /* Max width for individual cards */
+                  height: '300px', /* Fixed height for consistency */
                   transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
-                  transform: hoveredSlug === post.slug ? 'scale(1.03)' : 'scale(1)',
+                  transform: hoveredSlug === post.slug ? 'scale(1.05)' : 'scale(1)', /* Stronger hover effect */
                   cursor: 'pointer',
                   overflow: 'hidden',
                   display: 'flex',
                   flexDirection: 'column',
                   position: 'relative',
+                  border: '1px solid #e0e0e0', /* Subtle border */
                   ...(post.isShiny && {
                     '&::after': {
                       content: '""',
@@ -86,7 +101,7 @@ export default function BlogList() {
                       left: 0,
                       right: 0,
                       bottom: 0,
-                      background: 'radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 50%)', // Slightly brighter shine
+                      background: 'radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 60%)', /* Brighter, more spread out shine */
                       pointerEvents: 'none',
                     },
                   }),
@@ -97,17 +112,16 @@ export default function BlogList() {
                     <Image
                       src={post.image}
                       alt={post.title}
-                      width="100%"
-                      height="auto"
                       style={{
                         objectFit: 'cover',
-                        height: '220px',    // Increased image area height within card to maintain ratio
-                        borderRadius: '4px 4px 0 0',
+                        height: '180px', /* Adjusted image height */
+                        width: '100%',
+                        borderRadius: 'lg lg 0 0', /* Apply border-radius to top corners */
                       }}
                     />
                   )}
                   <div style={{ padding: '1rem', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                    <Title order={3} mt="xs" style={{textAlign: 'center', fontSize: '1.2rem', color: '#37474F'}}> {/* Darker gray/blue for card titles */}
+                    <Title order={3} mt="xs" style={{textAlign: 'center', fontSize: '1.3rem', color: '#37474F'}}>
                       {post.title}
                     </Title>
                   </div>
