@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 
 export default function BlogPost() {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const post = posts.find(p => p.slug === slug);
 
   useEffect(() => {
@@ -19,6 +20,9 @@ export default function BlogPost() {
 
   return (
     <article className="markdown-content">
+      <button onClick={() => navigate(-1)} className="back-button">
+        &larr; Back
+      </button>
       <h1>{post.title}</h1>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}

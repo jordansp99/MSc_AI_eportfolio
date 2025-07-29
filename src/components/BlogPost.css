@@ -60,3 +60,19 @@
     color: #969896 !important; /* Example: Gray comments */
   }
    /* and so on for other syntax elements */
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
