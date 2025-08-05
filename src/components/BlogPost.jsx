@@ -73,7 +73,12 @@ export default function BlogPost() {
               );
             },
             img: ({ node, ...props }) => {
-              return <img {...props} style={{ maxWidth: '100%', height: 'auto' }} />;
+              return (
+                <>
+                  <p className="image-module-title">{post.title}</p>
+                  <img {...props} style={{ maxWidth: '100%', height: 'auto' }} />
+                </>
+              );
             },
           }}
         >

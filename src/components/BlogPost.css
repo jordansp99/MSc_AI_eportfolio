@@ -144,6 +144,16 @@
   margin: 1.5em 0;
 }
 
+.image-module-title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1.5em; /* Add margin above the title */
+  margin-bottom: 0.5em;
+  color: #37474F; /* Match subheading color */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+}
+
 .blog-post-title-sticky-container {
   position: sticky;
   top: 0; /* Adjust this value based on your header height if any */
