@@ -87,6 +87,7 @@ export default function BlogList() {
             <div key={post.slug} ref={el => moduleRefs.current[post.slug] = el}>
               <Link to={`/post/${post.slug}`} className="project-card-link">
                 <Card p="0" radius="md" className="project-card">
+                  <Title order={3} className="project-title">{post.title}</Title>
                   <Image
                     src={post.image}
                     alt={post.title}
