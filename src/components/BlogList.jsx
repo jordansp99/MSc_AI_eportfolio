@@ -78,16 +78,19 @@ export default function BlogList() {
       </aside>
       <main className="main-content" ref={mainContentRef}>
         <div className="main-header">
-          <Text className="nav-link">
+          <div className={`active-module-title ${activeModule ? 'visible' : ''}`}>
             modules/
-          </Text>
+          </div>
         </div>
         <div className="projects-grid">
           {posts.map((post) => (
             <div key={post.slug} ref={el => moduleRefs.current[post.slug] = el}>
               <Link to={`/post/${post.slug}`} className="project-card-link">
                 <Card p="0" radius="md" className="project-card">
-                  <Title order={3} className="project-title">{post.title}</Title>
+                  <div className="project-title-container">
+                    <Title order={3} className="project-title">{post.title.toUpperCase()}</Title>
+                    <Text className="project-title-outline">{post.title.toUpperCase()}</Text>
+                  </div>
                   <Image
                     src={post.image}
                     alt={post.title}

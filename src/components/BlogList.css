@@ -39,18 +39,19 @@ body {
 }
 
 .sidebar-title {
-  font-size: 2.75rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: bold;
   color: #111111;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.05em;
 }
 
 .sidebar-subtitle {
-  font-size: 1.25rem;
-  color: #525252;
+  font-size: 1.5rem;
+  color: #111111;
   margin-bottom: 2rem;
-  font-weight: 500;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 .sidebar-description {
@@ -61,12 +62,8 @@ body {
 
 .social-link {
   color: #525252;
-  transition: color 0.2s ease-in-out;
 }
 
-.social-link:hover {
-  color: #111111;
-}
 
 .main-content {
   margin-left: 40%;
@@ -74,7 +71,6 @@ body {
   width: 60%;
   overflow-y: auto;
   background-color: #FFFFFF;
-  border-left: 1px solid #E5E5E5;
   position: relative;
 }
 
@@ -85,18 +81,16 @@ body {
   right: 0;
   z-index: 10;
   background-color: #FFFFFF;
-  padding: 2rem 3rem;
-  border-bottom: 1px solid #E5E5E5;
+  padding: 4rem 0;
 }
 
 .nav-link {
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  color: #737373;
+  font-size: 1.5rem;
+  color: #111111;
   letter-spacing: 0.05em;
   text-transform: lowercase;
   font-weight: bold;
-  font-style: italic;
 }
 
 .projects-grid {
@@ -115,33 +109,49 @@ body {
   overflow: hidden;
   border-radius: 12px;
   background-color: #FFFFFF;
-  border: 1px solid #E5E5E5;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-}
 
 .project-image {
   display: block;
   width: 100%;
-  transition: transform 0.4s ease;
-}
-
-.project-card:hover .project-image {
-  transform: scale(1.05);
 }
 
 
-.module-card-title {
+
+.project-title-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the title and the outline text */
+}
+
+.project-title {
+  font-family: 'Montserrat', sans-serif;
   color: #111111;
   font-size: 1.6rem;
   font-weight: 600;
-  margin-bottom: 1rem; /* Space between title and card */
   text-align: left;
   padding-left: 0; /* Remove padding-left to align with card */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project-title-outline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.05em;
+  text-shadow: 
+    -1px -1px 0 #111111,  
+     1px -1px 0 #111111,
+    -1px  1px 0 #111111,
+     1px  1px 0 #111111;
 }
 
 @media (max-width: 1200px) {
@@ -152,6 +162,14 @@ body {
     margin-left: 45%;
     width: 55%;
   }
+}
+
+.active-module-title {
+  font-size: 1.5rem;
+  color: #111111;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
 }
 
 @media (max-width: 992px) {
@@ -165,7 +183,6 @@ body {
     height: auto;
     padding: 2rem;
     border-right: none;
-    border-bottom: 1px solid #333;
   }
   .main-content {
     margin-left: 0;
