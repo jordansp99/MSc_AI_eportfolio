@@ -32,7 +32,7 @@ export default function BlogList() {
         const moduleEl = moduleRefs.current[post.slug];
         if (moduleEl) {
           const rect = moduleEl.getBoundingClientRect();
-          if (rect.top <= top + 150 && rect.bottom >= top) {
+          if (rect.top <= top + mainContent.clientHeight / 2 && rect.bottom >= mainContent.clientHeight / 2) {
             currentModule = post.title;
             break;
           }
@@ -79,7 +79,7 @@ export default function BlogList() {
       <main className="main-content" ref={mainContentRef}>
         <div className="main-header">
           <Text className="nav-link">
-            modules/{activeModule && <span>{activeModule}</span>}
+            modules/
           </Text>
         </div>
         <div className="projects-grid">
