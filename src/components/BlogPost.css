@@ -29,14 +29,6 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
   
-  .markdown-content h1 {
-    font-size: 2.5em; /* Larger heading */
-    margin-bottom: 20px; /* More space below heading */
-    color: #263238; /* Darker, consistent heading color */
-    font-family: 'Montserrat', sans-serif; /* Consistent heading font */
-    text-align: center; /* Center align headings */
-  }
-  
   .markdown-content h2,
   .markdown-content h3,
   .markdown-content h4,
@@ -150,4 +142,22 @@
   height: auto;
   border-radius: 10px;
   margin: 1.5em 0;
+}
+
+.blog-post-title-sticky-container {
+  position: sticky;
+  top: 0; /* Adjust this value based on your header height if any */
+  background-color: #ffffff; /* Match markdown-content background */
+  padding: 20px 30px; /* Add padding to match markdown-content */
+  margin: -30px -30px 20px -30px; /* Negative margin to pull it out of markdown-content padding and add bottom margin */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for sticky effect */
+  z-index: 10; /* Ensure it stays above other content */
+  text-align: center; /* Center align the title */
+}
+
+.blog-post-title-sticky-container h1 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
