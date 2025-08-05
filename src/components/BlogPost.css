@@ -7,14 +7,19 @@
 
 .blog-post-layout {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .back-button-container {
   position: sticky;
   top: 80px;
   height: fit-content;
+  align-self: flex-start; /* Align to the left within the flex column */
+  width: 100%; /* Ensure it takes full width */
+  max-width: 1000px; /* Match markdown-content max-width */
+  box-sizing: border-box; /* Include padding in width */
+  padding-left: 30px; /* Add padding to align with markdown-content */
 }
 
 .markdown-content {
@@ -154,20 +159,19 @@
   font-size: 1.1em;
 }
 
-.blog-post-title-sticky-container {
-  position: sticky;
-  top: 0; /* Adjust this value based on your header height if any */
+.blog-post-title-container {
   background-color: #ffffff; /* Match markdown-content background */
   padding: 20px 30px; /* Add padding to match markdown-content */
-  margin: -30px -30px 20px -30px; /* Negative margin to pull it out of markdown-content padding and add bottom margin */
+  margin-bottom: 20px; /* Add bottom margin */
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for sticky effect */
-  z-index: 10; /* Ensure it stays above other content */
   text-align: center; /* Center align the title */
+  width: 100%; /* Ensure it takes full width */
+  max-width: 1000px; /* Match markdown-content max-width */
+  box-sizing: border-box; /* Include padding in width */
 }
 
-.blog-post-title-sticky-container h1 {
+.blog-post-title-container h1 {
   margin-top: 0;
   margin-bottom: 0;
 }

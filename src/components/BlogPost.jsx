@@ -26,14 +26,13 @@ export default function BlogPost() {
             &larr; Back
           </button>
         </div>
-        <div className="blog-post-title-sticky-container">
+        <div className="blog-post-title-container">
           <h1>{post.title}</h1>
         </div>
         <article className="markdown-content">
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
           components={{
-            h1: ({ node, ...props }) => null, // Prevent h1 from rendering inside markdown content
             code({ node, inline, className, children, ...props }) {
               const match = /language-(\w+)/.exec(className || '');
               const [copyText, setCopyText] = useState('Copy');
