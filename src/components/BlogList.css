@@ -10,6 +10,7 @@ body {
 .dev-portfolio {
   display: flex;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .sidebar {
@@ -21,6 +22,7 @@ body {
   justify-content: space-between;
   position: fixed;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .sidebar-header {
@@ -72,6 +74,7 @@ body {
   overflow-y: auto;
   background-color: #FFFFFF;
   position: relative;
+  box-sizing: border-box;
 }
 
 .main-header {
@@ -91,13 +94,18 @@ body {
   letter-spacing: 0.05em;
   text-transform: lowercase;
   font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Example hover color */
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
-  padding-top: 2rem;
+  padding: 2rem 2.5rem; /* Add horizontal padding to prevent cutoff */
 }
 
 .project-card-link {
@@ -106,15 +114,22 @@ body {
 
 .project-card {
   position: relative;
-  overflow: hidden;
+  overflow: visible; /* Allow content to overflow when scaled */
   border-radius: 12px;
   background-color: #FFFFFF;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Increased scale for more noticeable animation */
 }
 
 
 .project-image {
-  display: block;
   width: 100%;
+  max-width: 70%; /* Adjust image size */
+  height: auto;
+  display: block; /* Ensure it behaves as a block element */
 }
 
 
@@ -130,7 +145,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #111111;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700; /* Increased font-weight */
   text-align: left;
   padding-left: 0; /* Remove padding-left to align with card */
   white-space: nowrap;
@@ -141,7 +156,7 @@ body {
 .project-title-outline {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700; /* Increased font-weight */
   color: #FFFFFF;
   white-space: nowrap;
   overflow: hidden;

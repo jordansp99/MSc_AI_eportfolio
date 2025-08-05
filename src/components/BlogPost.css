@@ -3,6 +3,7 @@
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .blog-post-layout {
@@ -20,6 +21,7 @@
   max-width: 1000px; /* Match markdown-content max-width */
   box-sizing: border-box; /* Include padding in width */
   padding-left: 30px; /* Add padding to align with markdown-content */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .markdown-content {
@@ -143,10 +145,11 @@
 }
 
 .markdown-content img {
-  max-width: 100%;
+  max-width: 25%; /* Make images 25% */
   height: auto;
   border-radius: 10px;
-  margin: 1.5em 0;
+  margin: 1.5em auto; /* Center images */
+  display: block; /* Ensure margin auto works */
 }
 
 .image-module-title {
