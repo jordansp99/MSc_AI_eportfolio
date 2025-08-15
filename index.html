@@ -9,6 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jordan Speight E-Portfolio</title>
+    <script>
+      (function() {
+        const redirect = sessionStorage.getItem('redirect');
+        if (redirect) {
+          sessionStorage.removeItem('redirect');
+          const newPath = redirect.substring(new URL(redirect).origin.length);
+          history.replaceState(null, null, newPath);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
