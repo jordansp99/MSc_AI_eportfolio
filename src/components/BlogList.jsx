@@ -64,7 +64,7 @@ export default function BlogList() {
             MSc Artificial Intelligence
           </Text>
           <Text className="sidebar-description">
-            I build pixel-perfect, engaging, and accessible digital experiences. This portfolio showcases my journey and the skills I've acquired.
+            This e-portfolio showcases my journey and the skills I've acquired during my MSc Artificial Intelligence at the University of Essex.
           </Text>
           <Group spacing="lg" position="left" mt="xl">
             <Anchor href="https://github.com/jordansp99" target="_blank" className="social-link">

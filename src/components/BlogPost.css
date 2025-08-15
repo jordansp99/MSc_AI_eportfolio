@@ -7,21 +7,27 @@
 }
 
 .blog-post-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .back-button-container {
-  position: sticky;
-  top: 80px;
+  position: fixed;
+  top: 120px;
+  left: calc(50% - 530px - 120px); /* Center-align with the content box */
   height: fit-content;
-  align-self: flex-start; /* Align to the left within the flex column */
-  width: 100%; /* Ensure it takes full width */
-  max-width: 1000px; /* Match markdown-content max-width */
-  box-sizing: border-box; /* Include padding in width */
-  padding-left: 30px; /* Add padding to align with markdown-content */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  width: auto;
+  z-index: 10;
+  transition: left 0.3s ease; /* Add transition for responsiveness */
+}
+
+@media (max-width: 1400px) {
+  .back-button-container {
+    left: 20px;
+  }
+  .blog-post-container {
+    padding-left: 140px;
+  }
 }
 
 .markdown-content {
