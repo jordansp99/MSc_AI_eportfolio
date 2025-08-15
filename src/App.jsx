@@ -3,9 +3,9 @@ import BlogList from './components/BlogList';
 import BlogPost from './components/BlogPost';
 export default function App() {
   return (
-    <Router>
+    <Router basename="/MSc_AI_eportfolio/">
       <Routes>
-        <Route path="/MSc_AI_eportfolio/" element={<BlogList />} />
+        <Route path="/" element={<BlogList />} />
         <Route path="/post/:slug" element={<BlogPost />} />
       </Routes>
     </Router>
