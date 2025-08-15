@@ -70,7 +70,7 @@ export default function BlogList() {
             <Anchor href="https://github.com/jordansp99" target="_blank" className="social-link">
               <IconBrandGithub size={28} />
             </Anchor>
-            <Anchor href="https://www.linkedin.com/in/jordanspeight/" target="_blank" className="social-link">
+            <Anchor href="https://www.linkedin.com/in/jordansp/" target="_blank" className="social-link">
               <IconBrandLinkedin size={28} />
             </Anchor>
           </Group>
