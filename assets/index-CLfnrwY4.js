@@ -76,6 +76,9 @@ image: "./images/image1.jpg"
 # Under development
 test
 ![test](/MSc_AI_eportfolio/images/image1.jpg)
+
+Here's an external image:
+![External Image](https://via.placeholder.com/150)
 `,nL=`---
 title: "Numerical Analysis"
 slug: "Numerical Analysis"
