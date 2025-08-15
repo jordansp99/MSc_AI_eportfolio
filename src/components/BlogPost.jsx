@@ -73,10 +73,7 @@ export default function BlogPost() {
             },
             img: ({ node, ...props }) => {
               return (
-                <>
-                  <p className="image-module-title">{post.title}</p>
-                  <img {...props} style={{ maxWidth: '100%', height: 'auto' }} />
-                </>
+                <img {...props} style={{ maxWidth: '100%', height: 'auto' }} />
               );
             },
           }}
