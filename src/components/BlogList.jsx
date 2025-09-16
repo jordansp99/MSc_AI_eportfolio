@@ -4,14 +4,10 @@ import { posts as rawPosts } from '../utils/posts';
 import { Card, Title, Image, Text, Group, Anchor } from '@mantine/core';
 import { IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
 import '@mantine/core/styles.css';
-import { useMemo, useState, useEffect, useRef } from 'react';
+import { useMemo } from 'react';
 import './BlogList.css';
 
 export default function BlogList() {
-  const [activeModule, setActiveModule] = useState('');
-  const mainContentRef = useRef(null);
-  const moduleRefs = useRef({});
-
   const posts = useMemo(() => {
     return [...rawPosts].sort((a, b) => {
       const numA = parseInt(a.title.split('.')[0]);
@@ -19,36 +15,6 @@ export default function BlogList() {
       return numA - numB;
     });
   }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const mainContent = mainContentRef.current;
-      if (!mainContent) return;
-
-      const { top } = mainContent.getBoundingClientRect();
-
-      let currentModule = '';
-      for (const post of posts) {
-        const moduleEl = moduleRefs.current[post.slug];
-        if (moduleEl) {
-          const rect = moduleEl.getBoundingClientRect();
-          if (rect.top <= top + mainContent.clientHeight / 2 && rect.bottom >= mainContent.clientHeight / 2) {
-            currentModule = post.title;
-            break;
-          }
-        }
-      }
-      setActiveModule(currentModule);
-    };
-
-    const mainContent = mainContentRef.current;
-    mainContent.addEventListener('scroll', handleScroll);
-    handleScroll(); 
-
-    return () => {
-      mainContent.removeEventListener('scroll', handleScroll);
-    };
-  }, [posts]);
 
   return (
     <div className="dev-portfolio">
@@ -76,15 +42,15 @@ export default function BlogList() {
           </Group>
         </div>
       </aside>
-      <main className="main-content" ref={mainContentRef}>
+      <main className="main-content">
         <div className="main-header">
-          <div className={`active-module-title ${activeModule ? 'visible' : ''}`}>
+          <div className="active-module-title">
             modules/
           </div>
         </div>
         <div className="projects-grid">
           {posts.map((post) => (
-            <div key={post.slug} ref={el => moduleRefs.current[post.slug] = el}>
+            <div key={post.slug}>
               <Link to={`/post/${post.slug}`} className="project-card-link">
                 <Card p="0" radius="md" className="project-card">
                   <div className="project-title-container">

@@ -5,6 +5,7 @@ body {
   color: #111111;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .dev-portfolio {
@@ -72,6 +73,7 @@ body {
   padding: 0;
   width: 60%;
   overflow-y: auto;
+  overflow-x: hidden; /* Added to prevent horizontal scrolling within main content */
   background-color: #FFFFFF;
   position: relative;
   box-sizing: border-box;
@@ -114,7 +116,7 @@ body {
 
 .project-card {
   position: relative;
-  overflow: visible; /* Allow content to overflow when scaled */
+  overflow: hidden; /* Changed to hidden to prevent overflow from scaled content */
   border-radius: 12px;
   background-color: #FFFFFF;
   transition: transform 0.3s ease-in-out;

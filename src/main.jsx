@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>  {/* Good practice for development */}
-    <MantineProvider withGlobalStyles withNormalizeCSS> {/* Wrap with MantineProvider */}
+    <MantineProvider> {/* Wrap with MantineProvider */}
       <App />
     </MantineProvider>
   </React.StrictMode>
