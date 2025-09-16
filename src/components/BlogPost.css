@@ -13,20 +13,75 @@
 
 .back-button-container {
   position: fixed;
-  top: 120px;
-  left: calc(50% - 530px - 120px); /* Center-align with the content box */
+  top: 20px; /* Adjust top for better mobile positioning */
+  left: 20px; /* Always start from left for mobile */
   height: fit-content;
   width: auto;
   z-index: 10;
-  transition: left 0.3s ease; /* Add transition for responsiveness */
+  transition: all 0.3s ease; /* Add transition for responsiveness */
+}
+
+@media (min-width: 1401px) {
+  .back-button-container {
+    left: calc(50% - 530px - 120px); /* Center-align with the content box for larger screens */
+    top: 120px; /* Original top position for larger screens */
+  }
+  .blog-post-container {
+    padding-left: 140px; /* Original padding for larger screens */
+  }
 }
 
 @media (max-width: 1400px) {
+  .blog-post-container {
+    padding-left: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
   .back-button-container {
-    left: 20px;
+    top: 10px;
+    left: 10px;
   }
   .blog-post-container {
-    padding-left: 140px;
+    padding: 10px; /* Reduce overall padding for very small screens */
+  }
+  .markdown-content {
+    padding: 15px; /* Reduce padding inside markdown content */
+    margin: 10px 0; /* Adjust margin */
+  }
+  .markdown-content img {
+    max-width: 50%; /* Make images smaller on mobile as per user feedback */
+  }
+  .blog-post-title-container {
+    padding: 15px; /* Adjust padding for title container */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+  .blog-post-title-container h1 {
+    font-size: 1.8em; /* Adjust title font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .back-button-container {
+    top: 5px;
+    left: 5px;
+  }
+  .blog-post-container {
+    padding: 5px;
+  }
+  .markdown-content {
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .markdown-content img {
+    max-width: 60%; /* Make images smaller on very small screens as per user feedback */
+  }
+  .blog-post-title-container {
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .blog-post-title-container h1 {
+    font-size: 1.5em;
   }
 }
 
@@ -151,7 +206,7 @@
 }
 
 .markdown-content img {
-  max-width: 25%; /* Make images 25% */
+  max-width: 50%; /* Make images 50% by default */
   height: auto;
   border-radius: 10px;
   margin: 1.5em auto; /* Center images */
