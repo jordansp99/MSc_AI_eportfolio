@@ -74,11 +74,6 @@ image: "./images/image1.jpg"
 ---
 
 # Under development
-test
-![test](/MSc_AI_eportfolio/images/image1.jpg)
-
-Here's an external image:
-![External Image](https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg)
 `,nL=`---
 title: "Numerical Analysis"
 slug: "Numerical Analysis"
@@ -97,28 +92,7 @@ image: "./images/image3.jpg"
 ## Module Artefacts
 ### Unit 1
 ## Reflective Piece: What Have I Learned and How?
-
-
-\`\`\`python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-
-X = np.array([[1], [2], [3], [4], [5]])
-y = np.array([2, 4, 5, 4, 5])
-
-model = LinearRegression()
-model.fit(X, y)
-
-X_new = np.array([[6]])
-y_pred = model.predict(X_new)
-
-plt.scatter(X, y)
-plt.plot(X, model.predict(X), color='red')
-plt.scatter(X_new, y_pred, color='green')
-plt.show()
-
-print(f"Prediction for X = 6: {y_pred[0]}")`,aL=`---
+`,aL=`---
 title: "Knowledge Representation and Reasoning"
 slug: "Knowledge Representation and Reasoning"
 image: "./images/image4.jpg"
@@ -137,31 +111,7 @@ image: "./images/image5.jpg"
 ## Module Artefacts
 
 ## Reflective Piece: What Have I Learned and How?
-
-## Meeting Notes
-
-## Professional Skills Matrix and Action Plan
-
-\`\`\`python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-
-X = np.array([[1], [2], [3], [4], [5]])
-y = np.array([2, 4, 5, 4, 5])
-
-model = LinearRegression()
-model.fit(X, y)
-
-X_new = np.array([[6]])
-y_pred = model.predict(X_new)
-
-plt.scatter(X, y)
-plt.plot(X, model.predict(X), color='red')
-plt.scatter(X_new, y_pred, color='green')
-plt.show()
-
-print(f"Prediction for X = 6: {y_pred[0]}")`,oL=`---
+`,oL=`---
 title: "Research Methods and Professional Practice"
 slug: "6. Research Methods and Professional Practice"
 image: "./images/image6.jpg"
