@@ -1,88 +1,90 @@
 /* BlogPost.css */
 .blog-post-container {
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .blog-post-layout {
-  max-width: 1000px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .back-button-container {
-  position: fixed;
-  top: 20px; /* Adjust top for better mobile positioning */
-  left: 20px; /* Always start from left for mobile */
-  height: fit-content;
-  width: auto;
-  z-index: 10;
-  transition: all 0.3s ease; /* Add transition for responsiveness */
+    position: fixed;
+    top: 20px; /* Adjust top for better mobile positioning */
+    left: 20px; /* Always start from left for mobile */
+    height: fit-content;
+    width: auto;
+    z-index: 10;
+    transition: all 0.3s ease; /* Add transition for responsiveness */
 }
 
 @media (min-width: 1401px) {
-  .back-button-container {
-    left: calc(50% - 530px - 120px); /* Center-align with the content box for larger screens */
-    top: 120px; /* Original top position for larger screens */
-  }
-  .blog-post-container {
-    padding-left: 140px; /* Original padding for larger screens */
-  }
+    .back-button-container {
+        left: calc(
+            50% - 530px - 120px
+        ); /* Center-align with the content box for larger screens */
+        top: 120px; /* Original top position for larger screens */
+    }
+    .blog-post-container {
+        padding-left: 140px; /* Original padding for larger screens */
+    }
 }
 
 @media (max-width: 1400px) {
-  .blog-post-container {
-    padding-left: 20px; /* Adjust padding for smaller screens */
-  }
+    .blog-post-container {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
 }
 
 @media (max-width: 768px) {
-  .back-button-container {
-    top: 10px;
-    left: 10px;
-  }
-  .blog-post-container {
-    padding: 10px; /* Reduce overall padding for very small screens */
-  }
-  .markdown-content {
-    padding: 15px; /* Reduce padding inside markdown content */
-    margin: 10px 0; /* Adjust margin */
-  }
-  .markdown-content img {
-    max-width: 50%; /* Make images smaller on mobile as per user feedback */
-  }
-  .blog-post-title-container {
-    padding: 15px; /* Adjust padding for title container */
-    margin-bottom: 10px; /* Adjust margin */
-  }
-  .blog-post-title-container h1 {
-    font-size: 1.8em; /* Adjust title font size */
-  }
+    .back-button-container {
+        top: 10px;
+        left: 10px;
+    }
+    .blog-post-container {
+        padding: 10px; /* Reduce overall padding for very small screens */
+    }
+    .markdown-content {
+        padding: 15px; /* Reduce padding inside markdown content */
+        margin: 10px 0; /* Adjust margin */
+    }
+    .markdown-content img {
+        max-width: 50%; /* Make images smaller on mobile as per user feedback */
+    }
+    .blog-post-title-container {
+        padding: 15px; /* Adjust padding for title container */
+        margin-bottom: 10px; /* Adjust margin */
+    }
+    .blog-post-title-container h1 {
+        font-size: 1.8em; /* Adjust title font size */
+    }
 }
 
 @media (max-width: 480px) {
-  .back-button-container {
-    top: 5px;
-    left: 5px;
-  }
-  .blog-post-container {
-    padding: 5px;
-  }
-  .markdown-content {
-    padding: 10px;
-    margin: 5px 0;
-  }
-  .markdown-content img {
-    max-width: 60%; /* Make images smaller on very small screens as per user feedback */
-  }
-  .blog-post-title-container {
-    padding: 10px;
-    margin-bottom: 5px;
-  }
-  .blog-post-title-container h1 {
-    font-size: 1.5em;
-  }
+    .back-button-container {
+        top: 5px;
+        left: 5px;
+    }
+    .blog-post-container {
+        padding: 5px;
+    }
+    .markdown-content {
+        padding: 10px;
+        margin: 5px 0;
+    }
+    .markdown-content img {
+        max-width: 60%; /* Make images smaller on very small screens as per user feedback */
+    }
+    .blog-post-title-container {
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    .blog-post-title-container h1 {
+        font-size: 1.5em;
+    }
 }
 
 .markdown-content {
@@ -91,40 +93,66 @@
     margin: 20px 0; /* Adjusted margin for new container */
     padding: 30px;
     line-height: 1.8;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-  
-  .markdown-content h2,
-  .markdown-content h3,
-  .markdown-content h4,
-  .markdown-content h5,
-  .markdown-content h6 {
-    color: #37474F; /* Slightly lighter dark blue-gray */
-    font-family: 'Montserrat', sans-serif;
+}
+
+.markdown-content h1,
+.markdown-content h2,
+.markdown-content h3,
+.markdown-content h4,
+.markdown-content h5,
+.markdown-content h6 {
+    color: #37474f; /* Slightly lighter dark blue-gray */
+    font-family: "Montserrat", sans-serif;
     margin-top: 30px; /* More space above subheadings */
     margin-bottom: 15px;
-  }
-  
-  .markdown-content p,
-  .markdown-content li {
+}
+
+.markdown-content h1 {
+    font-size: 2.2em;
+}
+
+.markdown-content h2 {
+    font-size: 1.8em;
+}
+
+.markdown-content h3 {
+    font-size: 1.5em;
+}
+
+.markdown-content h4 {
+    font-size: 1.3em;
+}
+
+.markdown-content h5 {
+    font-size: 1.2em;
+}
+
+.markdown-content h6 {
+    font-size: 1.1em;
+}
+
+.markdown-content p,
+.markdown-content li {
     margin-bottom: 15px; /* More space between paragraphs/list items */
-    color: #455A64; /* Softer dark gray for body text */
-  }
-  
-  .markdown-content code {
+    color: #455a64; /* Softer dark gray for body text */
+    font-size: 1.1em;
+}
+
+.markdown-content code {
     background-color: #e0e0e0; /* Slightly darker light gray for inline code */
     padding: 3px 6px; /* More padding */
     border-radius: 5px; /* Slightly more rounded */
-    font-family: 'Fira Code', monospace; /* More aesthetic monospace font */
+    font-family: "Fira Code", monospace; /* More aesthetic monospace font */
     font-size: 0.95em; /* Slightly larger font size */
-  }
-  
-  /* Syntax Highlighting styles (handled by react-syntax-highlighter) */
-  /* You can further customize the Dracula theme or choose another one */
-  .hljs {
+}
+
+/* Syntax Highlighting styles (handled by react-syntax-highlighter) */
+/* You can further customize the Dracula theme or choose another one */
+.hljs {
     background-color: #282a36 !important;
     color: #f8f8f2 !important;
     border-radius: 10px; /* More rounded corners for code blocks */
@@ -133,109 +161,116 @@
     overflow: auto;
     font-size: 0.9em; /* Slightly smaller font for code blocks */
     line-height: 1.5;
-  }
-  
-  .hljs-keyword, .hljs-operator, .hljs-punctuation, .hljs-function, .hljs-variable {
+}
+
+.hljs-keyword,
+.hljs-operator,
+.hljs-punctuation,
+.hljs-function,
+.hljs-variable {
     color: #c792ea !important; /* Example: Purple keywords */
-  }
-  
-  .hljs-string {
+}
+
+.hljs-string {
     color: #f0c674 !important; /* Example: Orange strings */
-  }
-  
-  .hljs-comment {
+}
+
+.hljs-comment {
     color: #969896 !important; /* Example: Gray comments */
-  }
-   /* and so on for other syntax elements */
+}
+/* and so on for other syntax elements */
 
 .back-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  font-size: 0.95em; /* Slightly larger font */
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95em; /* Slightly larger font */
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .back-button:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px); /* Slight lift on hover */
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift on hover */
 }
 
 .code-block {
-  position: relative;
-  margin-bottom: 1.5em;
+    position: relative;
+    margin-bottom: 1.5em;
 }
 
 .code-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #44475a;
-  color: #f8f8f2;
-  padding: 0.5em 1em;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #44475a;
+    color: #f8f8f2;
+    padding: 0.5em 1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .code-header span {
-  font-family: 'Fira Code', monospace;
-  font-size: 0.9em;
+    font-family: "Fira Code", monospace;
+    font-size: 0.9em;
 }
 
 .copy-button {
-  background-color: #282a36;
-  color: #f8f8f2;
-  border: none;
-  padding: 0.3em 0.6em;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.8em;
-  transition: background-color 0.3s ease;
+    background-color: #282a36;
+    color: #f8f8f2;
+    border: none;
+    padding: 0.3em 0.6em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
 }
 
 .copy-button:hover {
-  background-color: #6272a4;
+    background-color: #6272a4;
 }
 
 .markdown-content img {
-  max-width: 50%; /* Make images 50% by default */
-  height: auto;
-  border-radius: 10px;
-  margin: 1.5em auto; /* Center images */
-  display: block; /* Ensure margin auto works */
+    max-width: 50%; /* Make images 50% by default */
+    height: auto;
+    border-radius: 10px;
+    margin: 1.5em auto; /* Center images */
+    display: block; /* Ensure margin auto works */
 }
 
 .image-module-title {
-  text-align: center;
-  font-weight: bold;
-  margin-top: 1.5em; /* Add margin above the title */
-  margin-bottom: 0.5em;
-  color: #37474F; /* Match subheading color */
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.5em; /* Add margin above the title */
+    margin-bottom: 0.5em;
+    color: #37474f; /* Match subheading color */
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1em;
 }
 
 .blog-post-title-container {
-  background-color: #ffffff; /* Match markdown-content background */
-  padding: 20px 30px; /* Add padding to match markdown-content */
-  margin-bottom: 20px; /* Add bottom margin */
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  text-align: center; /* Center align the title */
-  width: 100%; /* Ensure it takes full width */
-  max-width: 1000px; /* Match markdown-content max-width */
-  box-sizing: border-box; /* Include padding in width */
+    background-color: #ffffff; /* Match markdown-content background */
+    padding: 20px 30px; /* Add padding to match markdown-content */
+    margin-bottom: 20px; /* Add bottom margin */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center; /* Center align the title */
+    width: 100%; /* Ensure it takes full width */
+    max-width: 1000px; /* Match markdown-content max-width */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 .blog-post-title-container h1 {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
