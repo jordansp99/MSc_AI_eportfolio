@@ -21,7 +21,7 @@ export default function BlogPost() {
   return (
     <div className="blog-post-container">
       <div className="back-button-container">
-        <button onClick={() => navigate(-1)} className="back-button">
+        <button onClick={() => navigate('/')} className="back-button">
           &larr; Back
         </button>
       </div>
