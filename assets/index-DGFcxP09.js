@@ -750,7 +750,7 @@ image: "./images/image5.jpg"
 
 ## Module Artefacts
 
-### Collaborative Discussion 1: Agent Based Systems
+###  Unit 1-3 Collaborative Discussion 1: Agent Based Systems
 
 **Discussion 1 Initial Post**
 
@@ -782,9 +782,10 @@ Jennings, N.R. and Bussmann, S., 2003. Agent-based control systems. IEEE control
 Waldherr, A., Hilbert, M. & González-Bailón, S. (2021) Worlds of Agents: Prospects of Agent-Based Modeling for Communication Research. Communication Methods and Measures, 15(4), pp. 243-254. doi:10.1080/19312458.2021.1986478.
 
 Link to Discussion 1 Peer Response 1: https://www.my-course.co.uk/mod/forum/discuss.php?d=312392#p615807
+
 Link to Discussion 1 Peer Response 2: https://www.my-course.co.uk/mod/forum/discuss.php?d=311808#p615775
 
-## Collaborative Discussion 2: Agent Communication Languages
+### Unit 5-7 -- Collaborative Discussion 2: Agent Communication Languages
 
 **Initial post**
 
@@ -815,7 +816,70 @@ Abdullah, you then grounded the discussion perfectly with a set of practical, en
 Ultimately, your contributions have beautifully demonstrated that the choice is not as drastic as I first presented it. By combining the disciplined architectural patterns Abdullah described with the advanced, adaptive techniques Pëllumb highlighted, we can engineer systems that are both flexible and efficient, overcoming the classic limitations of ACLs.
 
 Link to Discussion 2 Peer Response 1: https://www.my-course.co.uk/mod/forum/discuss.php?d=319614#p633128
+
 Link to Discussion 2 Peer Response 1: https://www.my-course.co.uk/mod/forum/discuss.php?d=318410#p633144
+
+### Unit 6
+
+In Unit the task was to create an agent dialogue, using KQML and KIF, between two agents (named Alice and Bob).
+
+Alice is an agent designed to procure stock and Bob is an agent that controls the stock levels for a warehouse. This dialogue should see Alice asking Bob about the available stock of 50 inch televisions, and also querying the number of HDMI slots the televisions have.
+
+Alice initiates the conversation by sending an ask-all performative. This signals that she is expecting a complete list of all instances that satisfy the condition in the content. The KIF expression asks for all entities ?t that are a tv with a size of 50 inches, and it requests the stock-level (?level) for each of them.
+
+\`\`\`KQML
+(ask-all
+  :sender Alice
+  :receiver Bob
+  :language KIF
+  :ontology warehouse-stock
+  :reply-with q1
+  :content (and
+              (tv ?t)
+              (size ?t 50-inch)
+              (stock-level ?t ?level))
+)
+\`\`\`
+Bob processes the query and responds with a tell performative. The content of the message is a KIF expression containing a set of facts. Each fact links a specific television model (e.g., model-xyz-100) to its stock level. This response provides Alice with a comprehensive list of all the 50-inch televisions available in the warehouse.
+\`\`\`KQML
+(tell
+  :sender Bob
+  :receiver Alice
+  :language KIF
+  :ontology warehouse-stock
+  :in-reply-to q1
+  :content (set
+              (and (tv model-xyz-100) (size model-xyz-100 50-inch) (stock-level model-xyz-100 85))
+              (and (tv model-abc-200) (size model-abc-200 50-inch) (stock-level model-abc-200 65)))
+)
+\`\`\`
+
+Now that Alice has the model numbers and stock levels, she sends another ask-all query to get more detailed product specifications. This time, the KIF content asks for the hdmi-slots for each of the specific television models (model-xyz-100 and model-abc-200) that Bob previously mentioned.
+\`\`\`KQML
+(ask-all
+  :sender Alice
+  :receiver Bob
+  :language KIF
+  :ontology product-features
+  :reply-with q2
+  :content (and
+              (or (= ?t model-xyz-100) (= ?t model-abc-200))
+              (hdmi-slots ?t ?slots))
+)
+\`\`\`
+Bob responds with a final tell performative, providing the specific feature information Alice requested. The KIF content explicitly states the number of HDMI slots for both model-xyz-100 and model-abc-200.
+\`\`\`KQML
+(tell
+  :sender Bob
+  :receiver Alice
+  :language KIF
+  :ontology product-features
+  :in-reply-to q2
+  :content (set
+              (and (tv model-xyz-100) (hdmi-slots model-xyz-100 4))
+              (and (tv model-abc-200) (hdmi-slots model-abc-200 3)))
+)
+\`\`\`
 ## Reflective Piece: What Have I Learned and How?
 `,o0=`---
 title: "Research Methods and Professional Practice"
