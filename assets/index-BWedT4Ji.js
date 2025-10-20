@@ -989,7 +989,54 @@ Romero-Moreno, F. (2025) 'Deepfake detection in generative AI: A legal framework
 
 Spivack, J. (2024) Synthetic Content: Exploring the Risks, Technical Approaches, and Regulatory Responses. Future of Privacy Forum.
 
+
+
+Link to E-portfolio Intelligent Agents page: https://jordansp99.github.io/MSc_AI_eportfolio/post/Intelligent%20Agents
+
 ## Reflective Piece: What Have I Learned and How?
+
+This module has fundamentally changed how I think about agent-based systems, taking me from theory to actual implementation. Through discussions, exercises, and both group and solo projects, I've developed technical skills in agent-based computing while learning about the ethical side of agent-based systems. This reflection uses Rolfe et al.'s (2001) framework to explore what happened, why it mattered, and how I'll use what I learned.
+
+### What: Module Experience and Project Development
+
+The module built up concepts progressively. Discussion 1 covered agent-based systems and emergent properties, establishing the theoretical foundation. The collaborative discussions were valuable because they forced me to explore complex ideas while learning from others. Elias and Mohamed brought perspectives on system resilience and governance that I hadn't considered.
+
+Discussion 2 focused on Agent Communication Languages. Creating the KQML/KIF dialogue in Unit 6 between Alice and Bob made abstract concepts concrete. I learned that designing effective agent communication requires careful consideration about ontologies, performatives, and potential ambiguities. The discussion with Pëllumb and Abdullah showed how modern solutions like dynamic ontology negotiation could solve the problems I'd identified.
+
+The group project to design a Multi-Agent System for automating literature reviews was challenging. Coordinating schedules across time zones required extensive planning. I started recording all meetings, which became essential for keeping absent team members informed. This reflected my growing understanding that the extent in which documentation matters in distributed software development.
+
+Discussion 3 shifted the focus to Natural Language Processing. Building parse trees in Unit 8 helped me understand syntactic ambiguity in Natural Language Processing. The deep learning discussions highlighted serious ethical challenges with generative AI.
+
+The solo implementation project brought everything together. Translating our group's design into working code using the BDI model required concrete architectural decisions. Implementing specialised agents to perform concurrent search across sources, integrating APIs for metadata extraction, and ensuring robust error handling taught me that design on paper differs significantly from actual implementation.
+
+### So What: Analysis and Emotional Response
+
+Working through this module triggered different emotional responses as I engaged more deeply with the material. Initially, I felt overwhelmed by the range of topics, from formal logic and communication protocols to neural networks and ethics. The theoretical density of early units, particularly around BDI models, challenged how I thought about software systems.
+
+The group project brought both frustration and satisfaction. Coordinating design decisions asynchronously was difficult. I sometimes felt my contributions weren't fully understood or that consensus formed without proper consideration of alternatives. Recording meetings helped but ensuring everyone stayed aligned required significant effort. However, seeing our design proposal come together with clear requirements, architectural diagrams, and a comprehensive test plan generated genuine pride.
+
+The solo implementation shifted things dramatically. Initially, I felt confident because we had a detailed design. Reality corrected that quickly. The anxiety I felt when implementations failed, particularly when web searches timed out or the extraction agent incorrectly parsed PDFs, was initially demotivating. However, this anxiety became productive once I reframed it. Each failure revealed an implicit assumption in our design: that network requests would complete reliably, that PDFs would follow consistent formatting standards, that APIs would remain accessible. Building robust error handling, implementing exponential backoff for retries, and graceful degradation when sources were unavailable, taught me that production systems must be designed with failure as the expected case, not the exception.
+
+The ethical discussions, particularly around deepfakes and generative AI, were sobering. Bender et al.'s (2021) "Stochastic Parrots" paper and Brundage et al.'s (2018) analysis of AI's malicious use made me confront an uncomfortable truth. The technologies I'm learning to build have the potential to cause real harm. The documented cases of deepfake fraud and non-consensual intimate imagery represent genuine suffering.
+
+### Now What: Future Application
+
+This module has given me technical skills and ethical frameworks I'll use in future work. The BDI model provides a useful way to break complex problems into autonomous components. In professional contexts, I can apply this to business process automation, where different agents handle discrete workflow stages like document processing, validation, routing, and storage, communicating through a central blackboard.The experience with concurrent programming and API integration is immediately useful. The exponential backoff retry mechanism for handling API failures is a pattern I'll reuse when working with external services.
+
+However, my most significant learning concerns ethics. The governance framework I proposed in my deepfakes analysis, combining simulation testing, human-in-the-loop fail-safes, continuous monitoring, and auditability standards, is a practical template I'll apply. When developing systems that impact people, technical correctness isn't enough. Systems must be transparent, auditable, and designed with failure modes explicitly considered.
+
+Recording group meetings, which I initially did for practical reasons, has become permanent practice. Documentation isn't overhead, it's essential for collaboration and knowledge transfer. Effective teamwork requires explicit communication protocols, just as agent systems require formal communication languages.
+
+Moving forward, I'm committed to specific actions. When facing complex automation problems, I'll explicitly consider whether an agent-based architecture is appropriate, evaluating modularity, autonomy, and coordination requirements. I'll approach AI capabilities with scepticism about societal implications, actively considering how systems might be misused or cause unintended harm.
+
+This module has changed my understanding of what it means to build intelligent systems. It's not just about autonomous agents or algorithms, it's about creating systems that are technically sound, ethically responsible, and genuinely useful for solving real problems.
+
+**References**
+Bender, E.M., Gebru, T., McMillan-Major, A. and Shmitchell, S. (2021) 'On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?', in Conference on Fairness, Accountability, and Transparency (FAccT '21), Virtual Event, Canada, ACM, New York, NY, USA, pp. 610–623.
+
+Brundage, M., Avin, S., Clark, J. et al. (2018) The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation. Report, Future of Humanity Institute, University of Oxford.
+
+Rolfe, G., Freshwater, D. and Jasper, M. (2001) Critical reflection in nursing and the helping professions: a user's guide. Basingstoke: Palgrave Macmillan.
 `,oO=`---
 title: "Research Methods and Professional Practice"
 slug: "6. Research Methods and Professional Practice"
