@@ -278,3 +278,37 @@
 .markdown-content a {
     word-break: break-all;
 }
+
+/* Table styles */
+.markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.markdown-content table thead tr {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: left;
+}
+
+.markdown-content table th,
+.markdown-content table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.markdown-content table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.markdown-content table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.markdown-content table tbody tr:last-of-type {
+    border-bottom: 2px solid #007bff;
+}
