@@ -1094,8 +1094,55 @@ slug: "6. Research Methods and Professional Practice"
 image: "./images/image6.jpg"
 ---
 
+### Unit 7
 
-# Under development
+#### Unit 7.1 Summary Measures Worksheet
+#### Excercise 1
+
+| Diet | n | Mean | SD |
+| :--- | :--- | :--- | :--- |
+| **Diet A** | 50 | 5.341 | 2.536 |
+| **Diet B** | 50 | 3.710 | 2.769042 |
+
+*Briefly interpret your findings. What do these results tell you about the relative effectiveness of the two weight-reducing diets?*
+
+The average weight loss for Diet A is significantly higher than that of Diet B. On average, participants on Diet A lost about 1.6 units kgs more than those on Diet B. The Standard Deviations are relatively similar , suggesting that the inconsistency of results is similar between the two groups. However, because Diet B has a lower mean and a slightly higher SD, its results are proportionally less consistent than Diet A. These results suggest that Diet A is superior to Diet B for weight loss, as it produces a higher average reduction in weight with similar variability among participants.
+
+#### Excercise 2
+
+| Statistic | Diet A | Diet B |
+| :--- | :--- | :--- |
+| **n** | 50 | 50 |
+| **Mean** | 5.341 | 3.710 |
+| **SD** | 2.536 | 2.769 |
+| **Median** | 5.569 | 3.745 |
+| **Q1** | 3.748 | 1.953 |
+| **Q3** | 7.033 | 5.404 |
+| **IQR** | 3.285 | 3.451 |
+
+*Briefly interpret your findings. What do these results tell you about the relative effectiveness of the two weight-reducing diets?*
+Diet A produces a consistently higher weight loss across the board. While both diets show similar variability the entire distribution of Diet A is shifted upward. A participant chosen at random from the Diet A group is statistically likely to have lost significantly more weight than a participant from the Diet B group.
+
+#### Excercise 3
+
+| | Area 1 (Freq) | Area 1 (%) | Area 2 (Freq) | Area 2 (%) |
+| :--- | :--- | :--- | :--- | :--- |
+| **A** | 11 | 15.7 | 19 | 21.1 |
+| **B** | 17 | 24.3 | 30 | 33.3 |
+| **Other** | 42 | 60.0 | 41 | 45.6 |
+| **Total** | **70** | **100** | **90** | **100** |
+
+*Briefly interpret your findings. What do these results tell you about the patterns of brand preferences for each of the two demographic areas?*
+
+Brand B is the preferred major brand in both demographics, consistently outperforming Brand A. However, the two areas show different levels of market penetration: Area 1 is dominated by the "Other" category (60%), indicating a fragmented market where consumers prefer alternatives. In contrast, Area 2 shows stronger engagement with the major labels, where Brand A and Brand B combined capture the majority of the market.
+
+#### Unit 7.2 Hypothesis Testing Worksheet
+#### Excercise 1
+
+*Recall that in the previous unit exercises, a two-tailed test was undertaken whether the population mean impurity differed between the two filtration agents in Data Set G. 
+Suppose instead a one-tailed test had been conducted to determine whether Filter Agent 1 was the more effective. What would your conclusions have been?*
+
+By switching to a one-tailed test, you are specifically checking if Agent 1 is better, effectively ignoring the possibility that it is worse. Consequently, the p-value is halved, if the p-value was > 0.05 but < 0.10, a one-tailed t test would bring it below the 0.05 threshold for significance. Therefore, unlike the previous result, you would now conclude that Filter Agent 1 is significantly more effective than Filter Agent 2.
 `,lO=`---
 title: "MSc Computing Project"
 slug: "MSc Computing Project"
