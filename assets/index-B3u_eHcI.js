@@ -1413,12 +1413,12 @@ The most relevant skills for this module:
 | | **Literacy & Communication** | Express information effectively to technical and non-technical audiences | **Proficient** | Produced an research proposal and interpreted statistical findings for weight loss and brand preference worksheets. |
 | | | Create documents to aid your communication (reports, diagrams, plans, and manuals) | **Proficient** | Created research proposals, statistical worksheets, and an e-portfolio documenting the learning journey. |
 | | **Commercial Awareness** | Demonstrate familiarity with codes of conduct for the Computing field (e.g., BCS/ACM) | **Proficient** | Detailed comparison of ACM and BCS codes in Unit 1 and the RSS/ASA codes for statistical practice in Unit 8. |
-| | | Keep current with tools of the industry, as well as emerging technology | **Proficient** | Adopted Power BI for rprototyping of dashboards. |
+| | | Keep current with tools of the industry, as well as emerging technology | **Proficient** | Adopted Power BI for prototyping of dashboards. |
 | **Legal and Ethical** | **Ethical Awareness** | Comply with the letter and spirit of applicable laws (GDPR, Intellectual Property) | **Proficient** | Evaluated legal obligations under the Public Interest Disclosure Act 1998 and disability discrimination legislation. |
 | | | Maintain privacy and confidentiality of company, co-worker and customer information | **Proficient** | Studied ethical standards for responsible research and the protection of participant data in Unit 1. |
 | **Social (inc. Teamwork)** | **Feedback & Decisions** | Give and receive constructive feedback (Peer Review) | **Proficient** | Actively engaged in peer discussion forums, synthesising feedback from peers into summary posts. |
 | | | Able to make a decision on a complex matter/scenario using multiple sources of information | **Proficient** | Evaluated ethical dilemmas by balancing professional codes (RSS), legislative frameworks, and organisational pressures. |
-| **Technical (Data Science)** | **IT and Digital, Numeracy** | Effective use of e-library resources (Academic Research) | **Proficient** | Utilized academic databases to source peer-reviewed literature for the literature review and discussion posts. |
+| **Technical (Data Science)** | **IT and Digital, Numeracy** | Effective use of e-library resources (Academic Research) | **Proficient** | Utilised academic databases to source peer-reviewed literature for the literature review and discussion posts. |
 | | | Git - repository development and maintenance | **Trained** | Managed and maintained an e-portfolio to showcase research and professional development. |
 | **Subject Application** | **Ethical Intelligence** | Develop, articulate and clarify your personal values and ethics | **Proficient** | Formulated a strong professional stance on prioritising public good and transparency over corporate loyalty in data reporting. |
 
