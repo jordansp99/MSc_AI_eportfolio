@@ -1407,20 +1407,20 @@ The most relevant skills for this module:
 
 | Competency | Essex Graduate | Skill | Skill Level | Evidence |
 | :--- | :--- | :--- | :--- | :--- |
-| **Professional** | **Subject understanding, research, critical thinking** | Critically analyse complex ideas in concepts in the field of Computer Science | | |
-| | | Recognise inconsistencies and gaps in information, and search for additional information when needed... | | |
-| | | Explore complex real-world problems in a Computing context | | |
-| | **Literacy & Communication** | Express information effectively to technical and non-technical audiences | | |
-| | | Create documents to aid your communication (reports, diagrams, plans, and manuals) | | |
-| | **Commercial Awareness** | Demonstrate familiarity with codes of conduct for the Computing field (e.g., BCS/ACM) | | |
-| | | Keep current with tools of the industry, as well as emerging technology | | |
-| **Legal and Ethical** | **Ethical Awareness** | Comply with the letter and spirit of applicable laws (GDPR, Intellectual Property) | | |
-| | | Maintain privacy and confidentiality of company, co-worker and customer information | | |
-| **Social (inc. Teamwork)** | **Feedback & Decisions** | Give and receive constructive feedback (Peer Review) | | |
-| | | Able to make a decision on a complex matter/scenario using multiple sources of information | | |
-| **Technical (Data Science)** | **IT and Digital, Numeracy** | Effective use of e-library resources (Academic Research) | | |
-| | | Git - repository development and maintenance | | |
-| **Subject Application** | **Ethical Intelligence** | Develop, articulate and clarify your personal values and ethics | | |
+| **Professional** | **Subject understanding, research, critical thinking** | Critically analyse complex ideas in concepts in the field of Computer Science | **Proficient** | Evaluated the systemic nature of "organisational ableism" and the impact of "p-hacking" on research integrity in computing. |
+| | | Recognise inconsistencies and gaps in information, and search for additional information when needed... | **Proficient** | Conducted a literature review to identify knowledge gaps and identified "researcher degrees of freedom" in the Whizzz data analysis. |
+| | | Explore complex real-world problems in a Computing context | **Proficient** | Analysed the intersection of technical debt, disability discrimination (ADA/WCAG), and organisational ableism. |
+| | **Literacy & Communication** | Express information effectively to technical and non-technical audiences | **Proficient** | Produced an research proposal and interpreted statistical findings for weight loss and brand preference worksheets. |
+| | | Create documents to aid your communication (reports, diagrams, plans, and manuals) | **Proficient** | Created research proposals, statistical worksheets, and an e-portfolio documenting the learning journey. |
+| | **Commercial Awareness** | Demonstrate familiarity with codes of conduct for the Computing field (e.g., BCS/ACM) | **Proficient** | Detailed comparison of ACM and BCS codes in Unit 1 and the RSS/ASA codes for statistical practice in Unit 8. |
+| | | Keep current with tools of the industry, as well as emerging technology | **Proficient** | Adopted Power BI for rprototyping of dashboards. |
+| **Legal and Ethical** | **Ethical Awareness** | Comply with the letter and spirit of applicable laws (GDPR, Intellectual Property) | **Proficient** | Evaluated legal obligations under the Public Interest Disclosure Act 1998 and disability discrimination legislation. |
+| | | Maintain privacy and confidentiality of company, co-worker and customer information | **Proficient** | Studied ethical standards for responsible research and the protection of participant data in Unit 1. |
+| **Social (inc. Teamwork)** | **Feedback & Decisions** | Give and receive constructive feedback (Peer Review) | **Proficient** | Actively engaged in peer discussion forums, synthesising feedback from peers into summary posts. |
+| | | Able to make a decision on a complex matter/scenario using multiple sources of information | **Proficient** | Evaluated ethical dilemmas by balancing professional codes (RSS), legislative frameworks, and organisational pressures. |
+| **Technical (Data Science)** | **IT and Digital, Numeracy** | Effective use of e-library resources (Academic Research) | **Proficient** | Utilized academic databases to source peer-reviewed literature for the literature review and discussion posts. |
+| | | Git - repository development and maintenance | **Trained** | Managed and maintained an e-portfolio to showcase research and professional development. |
+| **Subject Application** | **Ethical Intelligence** | Develop, articulate and clarify your personal values and ethics | **Proficient** | Formulated a strong professional stance on prioritising public good and transparency over corporate loyalty in data reporting. |
 `,sO=`---
 title: "MSc Computing Project"
 slug: "MSc Computing Project"
